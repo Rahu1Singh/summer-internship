@@ -1,15 +1,12 @@
-
 import './App.css'
-import Hero from './componenets/Hero'
-import Navbar from './componenets/Navbar'
+import Navbar from './components/Navbar'
+import Hero from './components/Hero'
 
-function App() {
-  return (
-    <div className="">
-      <Navbar />
-      <Hero />
-    </div>
-  )
+export default function App() {
+    return (
+        <div className='flex flex-wrap'>
+            <Navbar />
+			<Hero />
+        </div>
+    )
 }
-
-export default App
