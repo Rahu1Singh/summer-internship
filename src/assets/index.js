@@ -1,17 +1,21 @@
 import logo from "./logo.png"
 import heroImg1 from "./hero-img-1.jpg"
 import heroImg2 from "./hero-img-2.jpg"
-import logotransp from "./logo-transp.png"
-import { FooterWave } from "./footerwave.jsx";
-import bmsImg from "./bms1.jpg"
-import dataImg1 from "./Data-center-monitoring.jpg"
-import powerImg from "./power-monitoring.jpg"
-import secImg from "./security.jpg"
-import dataImg2 from "./datacenter1.jpg"
-import smarthomeImg1 from "./smart-home.jpg"
+import schneiderlogo from "./schneiderlogo.png"
+import hikvisionlogo from "./Hikvision-Logo.png"
+import sme500 from "./sme500.png"
+import bizsafe from "./bizsafe.png"
+import bms from "./ecoxpertbms.png"
+import criticalpower from "./criticalpower.png"
 
-import "tw-elements-react/dist/css/tw-elements-react.min.css";
-
-
-
-export {logo, heroImg1, heroImg2, logotransp, FooterWave, dataImg2, bmsImg, dataImg1, powerImg, secImg, smarthomeImg1};
+export {
+    logo, 
+    heroImg1, 
+    heroImg2, 
+    schneiderlogo, 
+    hikvisionlogo,
+    sme500,
+    bizsafe,
+    bms,
+    criticalpower,
+};

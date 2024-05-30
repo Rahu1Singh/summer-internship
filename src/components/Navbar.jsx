@@ -1,41 +1,70 @@
-import { logotransp } from "../assets";
-import { navbaritems } from "../constants";
+import { useState } from "react";
+import { disablePageScroll, enablePageScroll } from "scroll-lock";
+import { MdMenu, MdClose } from "react-icons/md";
+import { motion, AnimatePresence } from "framer-motion";
+
+import { logo } from "../assets";
+import Button from "./Button";
+import Nav from "./Nav";
+import Hamburger from "./Hamburger";
 
 const Navbar = () => {
-  return (
-    // Navbar container with fixed position at the top of the viewport
-    <div className="fixed top-0 left-0 h-[80px] z-50 w-screen bg-g-100 text-black flex align-middle justify-center">
-      {/* Content container with padding and font styling */}
-      <div className="flex items-center px-10 text-lg font-medium gap-20 h-full">
-        {/* Logo */}
-        <a className="block px-5" href="#home">
-          <img src={logotransp} height={64} width={200} alt="logo" />
-        </a>
-        {/* Navigation links */}
-        <nav className="flex-1">
-          <div className="flex flex-row items-center justify-center">
-            {/* Mapping through navbar items */}
-            {navbaritems.map((item) => (
-              <a
-                key={item.id}
-                href={item.url}
-                className="px-8 py-6 leading-5 hover:text-g-800 hover:scale-[1.15] hover:font-bold transition-all"
-              >
-                {item.title}
-              </a>
-            ))}
-          </div>
+    const [openNavigation, setOpenNavigation] = useState(false);
+
+    const toggleNavigation = () => {
+        if (openNavigation) {
+            setOpenNavigation(false);
+            enablePageScroll();
+        } else {
+            setOpenNavigation(true);
+            disablePageScroll();
+        }
+    };
+
+    const handleClick = () => {
+        if (!openNavigation) return;
+        enablePageScroll();
+        setOpenNavigation(false);
+    };
+
+    return (
+        <nav className={`fixed top-0 left-0 h-[80px] w-screen flex items-center justify-between px-6 lg:justify-around ${openNavigation ? 'bg-n-8' : 'bg-n-8/90 backdrop-blur-sm'} flex-wrap bg-white/0 z-50`}>
+            {!openNavigation && <div>
+                <img src={logo} height={64} width={200} alt="logo" />
+            </div>}
+            <div className={`hidden lg:static lg:flex`}>
+                <Nav />
+            </div>
+            <div className={`hidden lg:flex`}>
+                <Button>Contact Us</Button>
+            </div>
+            {!openNavigation && <button onClick={toggleNavigation} className="lg:hidden">
+                <MdMenu className="text-2xl" />
+            </button>}
+            <AnimatePresence>
+                {openNavigation && (
+                    <motion.div
+                        initial={{ opacity: 0, x: 300 }}
+                        animate={{ opacity: 1, x: 0 }}
+                        exit={{ opacity: 0, x: 300 }}
+                        transition={{ duration: 0.3, ease: "easeOut" }}
+                        className="fixed top-0 right-0 w-screen h-screen bg-b-200/50 backdrop-blur-md flex flex-col items-center z-50"
+                    >
+                        <div className="fixed top-2 left-6">
+                        <img src={logo} height={64} width={200} alt="logo" />
+                        </div>
+                        <button onClick={toggleNavigation} className="fixed top-4 right-2 m-4">
+                            <MdClose className="text-2xl" />
+                        </button>
+                        <div className="w-full pt-20">
+                            <Hamburger handleClick={handleClick}/>
+                        </div>
+                        <div className="fixed right-0 w-5 h-auto z-10 bg-b-300"></div>
+                    </motion.div>
+                )}
+            </AnimatePresence>
         </nav>
-        {/* Contact Us button */}
-        <a
-          href="#contact_us"
-          className="block px-6 py-2 rounded-md bg-g-600 text-whitebg hover:bg-whitebg hover:text-g-600 hover:font-bold hover:border-solid hover:border-[3px] hover:border-g-600 transition-all"
-        >
-          Contact Us
-        </a>
-      </div>
-    </div>
-  );
+    );
 };
 
 export default Navbar;
