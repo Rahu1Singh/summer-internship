@@ -4,7 +4,7 @@ import { navbaritems } from "../constants";
 const Navbar = () => {
   return (
     // Navbar container with fixed position at the top of the viewport
-    <div className="fixed top-0 left-0 h-[80px] z-50 w-screen bg-b-100 text-black flex align-middle justify-center">
+    <div className="fixed top-0 left-0 h-[80px] z-50 w-screen bg-g-100 text-black flex align-middle justify-center">
       {/* Content container with padding and font styling */}
       <div className="flex items-center px-10 text-lg font-medium gap-20 h-full">
         {/* Logo */}
@@ -19,7 +19,7 @@ const Navbar = () => {
               <a
                 key={item.id}
                 href={item.url}
-                className="px-8 py-6 leading-5 hover:text-b-800 hover:scale-[1.15] hover:font-bold transition-all"
+                className="px-8 py-6 leading-5 hover:text-g-800 hover:scale-[1.15] hover:font-bold transition-all"
               >
                 {item.title}
               </a>
@@ -29,7 +29,7 @@ const Navbar = () => {
         {/* Contact Us button */}
         <a
           href="#contact_us"
-          className="block px-6 py-2 rounded-md bg-b-600 text-whitebg hover:bg-whitebg hover:text-b-600 hover:font-bold hover:border-solid hover:border-[3px] hover:border-b-600 transition-all"
+          className="block px-6 py-2 rounded-md bg-g-600 text-whitebg hover:bg-whitebg hover:text-g-600 hover:font-bold hover:border-solid hover:border-[3px] hover:border-g-600 transition-all"
         >
           Contact Us
         </a>
