@@ -1,5 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
+export default {
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
@@ -7,6 +7,19 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ["var(--font-inter)"],
+      },
+      fontSize: {
+        sm: ['13.3px', '16px'],
+        base: ['16px', '16px'],
+        lg: ['19.2px', '24px'],
+        xl: ['23.04px', '24px'],
+        '2xl': ['27px', '32px'],
+        '3xl': ['33px', '40px'],
+        '4xl': ['40px', '40px'],
+        '5xl': ['48px', '48px']
+      },
       colors: {
         'b-100':"#E5EDF9",
         'b-200':"#C6D9F1",
@@ -39,22 +52,7 @@ module.exports = {
         'r-900':"#81221B",
         'whitebg':"#F3F8FF"
       },
-      
-      fontFamily: {
-        sans: ["var(--font-inter)"],
-      },
-      fontSize: {
-        sm: ['13.3px', '16px'],
-        base: ['16px', '16px'],
-        lg: ['19.2px', '24px'],
-        xl: ['23.04px', '24px'],
-        '2xl': ['27px', '32px'],
-        '3xl': ['33px', '40px'],
-        '4xl': ['40px', '40px'],
-        '5xl': ['48px', '48px']
-      }
     },
   },
-  darkMode: "class",
-  plugins: [require("tw-elements-react/dist/plugin.cjs")]
-};
+  plugins: []
+}
