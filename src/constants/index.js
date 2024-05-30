@@ -58,3 +58,18 @@ export const productitems = [
         url: "#safety_security"
     }
 ]
+
+export const herotext = [
+    {
+        id: "0",
+        text: "Efficiency Amplified: Redefining Industry Standards in Automation & IT Solutions."
+    },
+    {
+        id: "1",
+        text: "Streamlined Excellence: Your Partner in Simplifying Processes and Maximizing Results."
+    },
+    {
+        id: "2",
+        text: "Pioneering Innovation: Crafting Complete and Effective Products for Your Business Needs."
+    }
+]

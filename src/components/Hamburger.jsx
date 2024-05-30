@@ -2,7 +2,7 @@ import { navbaritems } from "../constants";
 
 const Hamburger = () => {
     return (
-        <div className="flex flex-col items-center justify-center h-screen w-screen space-y-10">
+        <div className="absolute z-50 flex flex-col items-center justify-center h-screen w-screen space-y-10">
             {navbaritems.map((item) => (
                 <div key={item.id} className="w-full flex flex-col items-center">
                     <a 

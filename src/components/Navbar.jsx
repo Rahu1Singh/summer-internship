@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { disablePageScroll, enablePageScroll } from "scroll-lock";
 import { MdMenu, MdClose } from "react-icons/md";
-import { motion, AnimatePresence } from "framer-motion"; // Import framer-motion
+import { motion, AnimatePresence } from "framer-motion";
 
 import { logo } from "../assets";
 import Button from "./Button";
