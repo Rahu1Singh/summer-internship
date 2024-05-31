@@ -6,6 +6,7 @@ import About from './pages/About'
 import Products from './pages/Products'
 import Contact from './pages/Contact'
 import Services from './pages/Services'
+import Footer from './components/Footer'
 
 export default function App() {
     return (
@@ -18,6 +19,7 @@ export default function App() {
                 <Route path="/services" element={<Services />} />
                 <Route path="/contact" element={<Contact />} />
             </Routes>
+            <Footer />
         </Router>
     )
 }
