@@ -8,6 +8,19 @@ import bizsafe from "./bizsafe.png"
 import bms from "./ecoxpertbms.png"
 import criticalpower from "./criticalpower.png"
 
+import airports from "./icons/airports.png"
+import certified from "./icons/certified.png"
+import commercialestates from "./icons/commercialestates.png"
+import datacenter from "./icons/datacenter.png"
+import experience from "./icons/experience.png"
+import healthcare from "./icons/healthcare.png"
+import hikvision from "./icons/hikvision.png"
+import hotels from "./icons/hotels.png"
+import iso from "./icons/iso.png"
+import lifescience from "./icons/lifescience.png"
+import location from "./icons/location.png"
+import professional from "./icons/professional.png"
+
 export {
     logo, 
     heroImg1, 
@@ -18,4 +31,16 @@ export {
     bizsafe,
     bms,
     criticalpower,
+    airports,
+    certified,
+    commercialestates,
+    datacenter,
+    experience,
+    healthcare,
+    hikvision,
+    hotels,
+    iso,
+    lifescience,
+    location,
+    professional,
 };
