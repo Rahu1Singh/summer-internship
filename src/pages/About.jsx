@@ -1,7 +1,10 @@
+import Domains from "../components/Domains"
+import Hero from "../components/Hero"
+
 const About = () => {
   return (
     <div>
-      <h1>About Us</h1>
+      <Domains />
     </div>
   )
 }
