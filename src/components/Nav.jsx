@@ -41,9 +41,9 @@ const ProductsContent = () => {
         <div className="w-64 p-6 ">
             <div className="mb-6 space-y-5">
                 {productitems.map((item) => (
-                    <a key={item.id} href={item.url} className="block text-base text-left font-medium hover:underline">
+                    <Link key={item.id} to={item.url} className="block text-base text-left font-medium hover:underline">
                         {item.title}
-                    </a>
+                    </Link>
                 ))}
             </div>
             <button className="w-full bg-white text-g-700 rounded-lg border-2 border-g-700 px-4 py-2 font-semibold transition-colors hover:bg-g-700 hover:text-white hover:border-g-700">

@@ -8,21 +8,21 @@ const Description = () => {
                     <div className="uppercase text-left xl:w-1/3 text-3xl md:text-4xl font-bold xl:text-right px-10 py-5">Our<br />Products</div>
                     <div className="md:w-4/5 xl:w-1/2 text-lg text-left pl-10">
                         Ingenium Automation + Engineering offers a whole range of IT & Automation products for the Process / Energy / Building and Engineering industries globally using open protocols like OPC, Modbus, Profibus, Profinet, Bacnet, Lonworks.
-                        <Button>Our Products</Button>
+                        <Button link="/products">Read More</Button>
                     </div>
                 </div>
                 <div className='xl:w-3/4 flex flex-col xl:flex-row py-10'>
-                    <div className="uppercase text-left xl:w-1/3 text-3xl md:text-4xl font-bold xl:text-right px-10 py-5">Solutions</div>
+                    <div className="uppercase text-left xl:w-1/3 text-3xl md:text-4xl font-bold xl:text-right px-10 py-5">Our<br />Solutions</div>
                     <div className="md:w-4/5 xl:w-1/2 text-lg text-left pl-10">
                         We at Ingenium Automation + Engineering are capable of Designing, Developing & installing various Solutions using different types of PLCs, Controllers, SCADA/DCS systems &Drivers for our global clients
-                        <Button>Our Solutions</Button>
+                        <Button link="/services">Read More</Button>
                     </div>
                 </div>
                 <div className='xl:w-3/4 flex flex-col xl:flex-row py-10'>
-                    <div className="uppercase text-left xl:w-1/3 text-3xl xl:text-4xl font-bold xl:text-right px-10 py-5">Services</div>
+                    <div className="uppercase text-left xl:w-1/3 text-3xl md:text-4xl font-bold xl:text-right px-10 py-5">Our<br />Services</div>
                     <div className="md:w-4/5 xl:w-1/2 text-lg text-left pl-10">
                         Ingenium Automation + Engineering offers professional Engineering / Documentation / Commissioning / Validation services for global clients on turnkey project basis
-                        <Button>Our Services</Button>
+                        <Button link="/services">Read More</Button>
                     </div>
                 </div>
             </div>
