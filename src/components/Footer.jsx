@@ -3,9 +3,9 @@ import { Footerwave } from "./Footerwave";
 
 const Footer = () => {
     return (
-      <div className="z-10 w-screen bg-b-600 text-white">
+      <div className="static z-10 bg-b-600 text-white">
         {/* SVG wave pattern at the top */}
-        <div className="text-b-100 z-0 top-0 left-0 w-full overflow-hidden leading-[0]">
+        <div className="text-b-100 top-0 left-0 w-full overflow-hidden leading-[0]">
           <Footerwave />
         </div>
   
