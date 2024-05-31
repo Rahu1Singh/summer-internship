@@ -1,4 +1,5 @@
 import { useState } from "react"
+import { NavLink as Link } from "react-router-dom"
 import { navbaritems, productitems } from "../constants"
 import { AnimatePresence, motion } from "framer-motion"
 
@@ -20,9 +21,9 @@ const FlyoutLink = ({children, href, FlyoutContent, className}) => {
 
     return (
         <div onMouseEnter={() => setOpen(true)} onMouseLeave={() => setOpen(false)} className="relative w-fit h-fit">
-            <a href={href} className={className}>
+            <Link to={href} className={className}>
                 {children}
-            </a>
+            </Link>
             <AnimatePresence>
                 {showFlyout && (
                     <motion.div initial={{ opacity: 0, y: 15 }} animate={{ opacity: 1, y: 7 }} exit={{ opacity: 0, y: 15 }} style={{ translateX: "-50%" }} transition={{ duration: 0.3, ease: "easeOut" }} className="absolute left-1/2 top-12 bg-b-200/25 backdrop-blur-sm rounded-lg text-black">
