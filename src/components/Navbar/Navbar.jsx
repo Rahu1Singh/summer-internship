@@ -1,10 +1,11 @@
 import { useState } from "react";
+import { NavLink as Link } from "react-router-dom";
 import { disablePageScroll, enablePageScroll } from "scroll-lock";
 import { MdMenu, MdClose } from "react-icons/md";
 import { motion, AnimatePresence } from "framer-motion";
 
-import { logo } from "../assets";
-import Button from "./Button";
+import { logo } from "../../assets";
+import Button from "../Button";
 import Nav from "./Nav";
 import Hamburger from "./Hamburger";
 
@@ -28,7 +29,7 @@ const Navbar = () => {
     };
 
     return (
-        <nav className={`fixed top-0 left-0 h-[80px] w-screen flex items-center justify-between px-6 lg:justify-around ${openNavigation ? 'bg-n-8' : 'bg-n-8/90 backdrop-blur-sm'} flex-wrap bg-white/0 z-50`}>
+        <nav className={`sticky top-0 h-[80px] w-screen flex items-center justify-between px-6 lg:justify-around ${openNavigation ? 'bg-n-8' : 'bg-b-100/80 backdrop-blur-sm'} flex-wrap bg-b-100/50 z-50`}>
             {!openNavigation && <div>
                 <img src={logo} height={64} width={200} alt="logo" />
             </div>}
@@ -36,7 +37,7 @@ const Navbar = () => {
                 <Nav />
             </div>
             <div className={`hidden lg:flex`}>
-                <Button>Contact Us</Button>
+                <Link to="/contact"><Button>Contact Us</Button></Link>
             </div>
             {!openNavigation && <button onClick={toggleNavigation} className="lg:hidden">
                 <MdMenu className="text-2xl" />

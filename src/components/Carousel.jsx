@@ -3,7 +3,8 @@ import { TECarousel, TECarouselItem } from 'tw-elements-react';
 
 export default function Carousel() {
   return (
-    <div className="max-lg:hidden w-full max-w-screen-lg mx-auto my-8 lg:px-16 xl:px-1">
+    <div className='relative'>
+    <div className="max-lg:hidden max-w-screen-lg mx-auto lg:px-16 xl:px-1">
       <div className="relative">
         <TECarousel showControls showIndicators ride="carousel" className="rounded-3xl">
           <div className="relative w-full overflow-hidden after:clear-both after:block after:content-['']">
@@ -58,6 +59,9 @@ export default function Carousel() {
           </div>
         </TECarousel>
       </div>
+    </div>
+    <div className='absolute right-0 top-0 bg-b-400 h-full w-[70px] lg:w-[90px] z-50' />
+    <div className='absolute right-[70px] xl:right-[90px] top-0 bg-b-300 h-full w-[70px] xl:w-[90px]' />
     </div>
   );
 }

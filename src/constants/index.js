@@ -2,31 +2,31 @@ export const navbaritems = [
     {
         id: "0",
         title: "Home",
-        url: "",
+        url: "/",
         onlyMobile:false
     },
     {
         id: "1",
         title: "About Us",
-        url: "#about_us",
+        url: "/about",
         onlyMobile:false
     },
     {
         id: "2",
         title: "Products",
-        url: "#products",
+        url: "/products",
         onlyMobile:false
     },
     {
         id: "3",
         title: "Solutions & Services",
-        url: "#solutions_services",
+        url: "/services",
         onlyMobile:false
     },
     {
         id: "4",
         title: "Contact Us",
-        url: '#contact_us',
+        url: '/contact',
         onlyMobile:true
     }
 ]
