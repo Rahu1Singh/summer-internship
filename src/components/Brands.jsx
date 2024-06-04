@@ -3,7 +3,7 @@ import { schneiderlogo, hikvisionlogo, sme500, bizsafe, bms, criticalpower } fro
 const Brands = () => {
   return (
     <div className='relative flex flex-col items-center bg-b-100 py-5 md:py-20'>
-        <div className="z-10 bg-b-200 rounded-3xl p-5 w-full max-w-5xl">      
+        <div className="z-10 bg-b-200 md:rounded-3xl p-5 w-full max-w-5xl">      
             <div id='partnered-by' className='text-center text-2xl md:text-4xl font-bold py-5'>Partnered By</div>
             <div id='brands' className="flex flex-wrap justify-center py-5">
                 <img src={schneiderlogo} className="m-5 h-20 md:h-24 lg:h-26" alt="Schneider Electric" />
@@ -17,9 +17,6 @@ const Brands = () => {
                 <img src={criticalpower} className="m-5 h-20 md:h-24 lg:h-28 p-2" alt="Critical Power" />
             </div>
         </div>
-
-        <div className='absolute max-md:hidden right-0 top-0 bg-b-400 h-full w-[70px] lg:w-[90px]' />
-        <div className='absolute max-md:hidden right-[70px] xl:right-[90px] top-0 bg-b-300 h-full w-[70px] xl:w-[90px]' />
     </div>
   )
 }

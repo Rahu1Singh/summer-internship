@@ -24,7 +24,7 @@ const Hero = () => {
                         <Button link="/products" className='bg-b-800 mr-2 md:mr-4 mb-4 md:mb-0 text-white rounded-3xl text-lg border-b-800 hover:bg-white/0 hover:text-b-800 hover:font-bold'>
                             Check out products
                         </Button>
-                        <Button link="/services" className='bg-transparent mr-0 md:mr-4 text-lg rounded-3xl text-b-800 border-b-800 hover:bg-b-800 hover:text-white hover:font-bold'>
+                        <Button link="/services" className='bg-transparent mr-2 md:mr-4 mb-4 md:mb-0 text-lg rounded-3xl text-b-800 border-b-800 hover:bg-b-800 hover:text-white hover:font-bold'>
                             Solutions & Services
                         </Button>
                     </div>
@@ -34,9 +34,6 @@ const Hero = () => {
             <div id='heroImages' className='max-2xl:hidden flex-1 flex justify-center w-1/3 z-30'>
                 <HeroImages />
             </div>
-
-            <div className='absolute max-md:hidden right-0 top-0 bg-b-400 h-full w-[70px] lg:w-[90px]' />
-            <div className='absolute max-md:hidden right-[70px] xl:right-[90px] top-0 bg-b-300 h-full w-[70px] xl:w-[90px]' />
         </div>
     );
 };

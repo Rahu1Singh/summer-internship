@@ -7,7 +7,7 @@ const Domains = () => {
             <h1 className="z-10 text-4xl font-bold text-b-800 mt-8">Who We Are</h1>
             <div id="whoweare" className="my-10 relative p-5 flex justify-center items-center w-full max-w-4xl">
                 <Whoweare />
-                <div className="hidden md:block absolute top-[50px] left-[50px] z-10 h-[666px] w-[747px] rounded-2xl bg-b-800" />
+                <div className="hidden md:block absolute md:top-[50px] md:right-[140px] lg:top-[50px] lg:left-[50px] z-10 h-[750px] w-[450px] lg:h-[666px] lg:w-[747px] rounded-2xl bg-b-800" />
             </div>
             
             <div className="my-10 relative p-5 flex max-lg:flex-col justify-center items-center w-full">
