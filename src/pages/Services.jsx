@@ -1,11 +1,13 @@
+import { automation , it , engineering } from "../assets"
+
 const Services = () => {
   	return (
     	<div className="relative bg-b-100">
       		<ServicesHeader />
       		<Intro />
-      		<ServiceCard><AutomationContent /></ServiceCard>
-			<ServiceCard><ITContent /></ServiceCard>
-			<ServiceCard><EngineeringContent /></ServiceCard>
+      		<ServiceCard img={automation}><AutomationContent /></ServiceCard>
+			<ServiceCard img={it}><ITContent /></ServiceCard>
+			<ServiceCard img={engineering}><EngineeringContent /></ServiceCard>
     	</div>
   	)
 }
@@ -13,7 +15,7 @@ const Services = () => {
 const ServicesHeader = () => {
   	return (
     	<div id="header" className='relative left-0 top-0 w-full h-[200px] xl:h-[460px] bg-b-200 p-10 flex items-center'>
-      		<h1 className='absolute top-2/3 left-[5%] text-3xl xl:text-[54px] font-bold'> Solutions & Services </h1>
+      		<h1 className='absolute bottom-1/3 left-[5%] text-5xl xl:text-[54px] font-bold'> Solutions & Services </h1>
     	</div>
 	)
 }
@@ -28,26 +30,29 @@ const Intro = () => {
   	)
 }
 
-const ServiceCard = ({children}) => {
+const ServiceCard = ({children, img}) => {
   return (
-    	<div className="relative py-20">
-    		<div className="relative xl:w-4/5 h-[536px] z-10 mx-auto bg-b-200 xl:rounded-3xl p-10 flex flex-row items-center">
+    	<div className="relative my-10 py-10">
+    		<div className="relative xl:w-4/5 h-[536px] z-10 mx-auto xl:bg-b-200 xl:rounded-3xl p-10 flex flex-row items-center">
 				<div className="hidden xl:block relative m-10">
-					<div className="relative w-[400px] h-[400px] bg-gray-50 z-10 rounded-3xl" />
+					<div className="relative w-[400px] h-[400px] z-10 rounded-3xl" >
+						<img src={img} className='rounded-3xl object-cover h-[400px] w-[400px]'/>
+					</div>
 					<div className="absolute top-[20px] left-[20px] w-[400px] h-[400px] bg-b-700 rounded-3xl" />
 				</div>
 				{children}
 			</div>
-			<div className="hidden xl:block absolute w-4/5 h-[536px] top-[110px] left-[12%] bg-b-700 rounded-3xl" />
+			<img  src={img} width={380} height={362} className="absolute xl:hidden top-0 w-full h-full object-cover opacity-65" />
+			<div className="hidden xl:block absolute w-4/5 h-[536px] top-[12%] left-[12%] bg-b-700 rounded-3xl" />
     	</div>
   	)
 }
 
 const AutomationContent = () => {
 	return (
-		<div className="relative flex flex-col xl:text-left m-10">
-					<h1 className="font-bold text-4xl text-b-800 mt-10 mb-5">AUTOMATION</h1>
-					<ul className="hidden md:block text-[17px]">
+		<div className="relative flex flex-col xl:text-left m-10 bg-i">
+					<h1 className="font-bold text-4xl text-b-900 mt-10 mb-5">AUTOMATION</h1>
+					<ul className="hidden md:block text-[17px] font-medium text-white xl:text-black">
 					<li className="list-disc my-3">Building Management System (PLC, SCADA & DDC SYSTEM) - Provides seamless integration and real-time monitoring of building operations to optimize energy use and ensure efficient facility management.</li>
 					<li className="list-disc my-3">Power Management Systems (PME) - Enhances energy efficiency and reliability through comprehensive monitoring and management of power distribution systems.</li>
 					<li className="list-disc my-3">Process Automation (PLC Programming & SCADA Engineering) - Customizes PLC programming and SCADA engineering to automate processes, increase efficiency, and provide detailed monitoring and control.</li>
@@ -61,8 +66,8 @@ const AutomationContent = () => {
 const ITContent = () => {
 	return (
 		<div className="relative flex flex-col text-left m-10">
-					<h1 className="font-bold text-4xl text-b-800 mt-10 mb-5">INFORMATION TECHNOLOGY</h1>
-					<ul className="hidden md:block text-[17px]">
+					<h1 className="font-bold text-4xl text-b-900 mt-10 mb-5">INFORMATION TECHNOLOGY</h1>
+					<ul className="hidden md:block text-[17px] font-medium text-white xl:text-black">
 					<li className="list-disc my-3">Software Development - Offers bespoke software solutions tailored to meet specific business needs, enhancing operational efficiency and functionality.</li>
 					<li className="list-disc my-3">Interface, Driver Development (OPC, SLIP+, BNP3, BACNET, LONWORKS, MODBUS, Other Protocols) - Develops and integrates custom drivers and interfaces for a wide range of protocols, ensuring seamless communication and interoperability between different systems.</li>
 					<li className="list-disc my-3">Custom Interface For Database (SQL, MYSQL, ORACLE) - Creates tailored database interfaces to enable efficient data management, retrieval, and storage across various database platforms like SQL, MySQL, and Oracle.</li>
@@ -77,8 +82,8 @@ const ITContent = () => {
 const EngineeringContent = () => {
 	return (
 		<div className="relative flex flex-col text-left p-2 m-10">
-					<h1 className="font-bold text-4xl text-b-800 mt-10 mb-5">ENGINEERING</h1>
-					<ul className="hidden md:block text-[17px]">
+					<h1 className="font-bold text-4xl text-b-900 mt-10 mb-5">ENGINEERING</h1>
+					<ul className="hidden md:block text-[17px] font-medium text-white xl:text-black">
 					<li className="list-disc my-3">DDC / PLC Panels Design & Engineering / Delivery - Provides comprehensive design, engineering, and delivery of DDC and PLC panels, ensuring efficient and reliable control systems for various applications.</li>
 					<li className="list-disc my-3">Power Monitoring System Design & Engineering / Delivery - Specializes in the design, engineering, and delivery of power monitoring systems to enhance energy management and ensure optimal power distribution.</li>
 					<li className="list-disc my-3">Chiller Plant Control & Monitoring - Develops and implements advanced control and monitoring solutions for chiller plants, optimizing performance and energy efficiency.</li>

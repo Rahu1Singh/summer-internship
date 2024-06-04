@@ -8,6 +8,10 @@ import bizsafe from "./bizsafe.png"
 import bms from "./ecoxpertbms.png"
 import criticalpower from "./criticalpower.png"
 
+import automation from "./automation-img.jpg"
+import it from "./it-img.jpg"
+import engineering from "./engineering-img.jpg"
+
 import airports from "./icons/airports.png"
 import certified from "./icons/certified.png"
 import commercialestates from "./icons/commercialestates.png"
@@ -31,6 +35,9 @@ export {
     bizsafe,
     bms,
     criticalpower,
+    automation,
+    it,
+    engineering,
     airports,
     certified,
     commercialestates,
