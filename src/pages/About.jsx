@@ -1,11 +1,11 @@
 import Domains from "../components/Domains"
-import AboutUs from "../components/AboutUs"
+import AboutUsHero from "../components/AboutUsHero"
 import Reviews from "../components/Reviews"
 
 const About = () => {
   return (
     <div>
-      <AboutUs />
+      <AboutUsHero />
       <Domains />
       <Reviews />
     </div>

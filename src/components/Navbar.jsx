@@ -37,7 +37,7 @@ const Navbar = () => {
                 <Nav />
             </div>
             <div className={`hidden lg:flex`}>
-                <Link to="/contact"><Button>Contact Us</Button></Link>
+                <Button link="/contact">Contact Us</Button>
             </div>
             {!openNavigation && <button onClick={toggleNavigation} className="lg:hidden">
                 <MdMenu className="text-2xl" />

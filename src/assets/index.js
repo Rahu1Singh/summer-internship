@@ -1,7 +1,7 @@
 import logo from "./logo.png"
 import heroImg1 from "./hero-img-1.jpg"
 import heroImg2 from "./hero-img-2.jpg"
-import innosols from "./innovativesols.jpg"
+import aboutusimg from "./aboutusimg.jpg"
 import schneiderlogo from "./schneiderlogo.png"
 import hikvisionlogo from "./Hikvision-Logo.png"
 import sme500 from "./sme500.png"
@@ -18,6 +18,10 @@ import greystonelogo from "./greystone.png"
 import ravellogo from "./ravel.png"
 import matrixlogo from "./matrix.png"
 import brands from "./brands.png"
+
+import automation from "./automation-img.jpg"
+import it from "./it-img.jpg" 
+import engineering from "./engineering-img.jpg"
 
 import airports from "./icons/airports.png"
 import certified from "./icons/certified.png"
@@ -37,7 +41,7 @@ export {
     logo, 
     heroImg1, 
     heroImg2, 
-    innosols,
+    aboutusimg,
     schneiderlogo, 
     hikvisionlogo,
     sme500,
@@ -53,6 +57,9 @@ export {
     ravellogo,
     matrixlogo,
     brands,
+    automation,
+    it,
+    engineering,
     airports,
     certified,
     commercialestates,

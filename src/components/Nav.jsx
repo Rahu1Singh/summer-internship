@@ -21,9 +21,9 @@ const FlyoutLink = ({children, href, FlyoutContent, className}) => {
 
     return (
         <div onMouseEnter={() => setOpen(true)} onMouseLeave={() => setOpen(false)} className="relative w-fit h-fit">
-            <Link to={href} className={className}>
+            <a href={href} className={className}>
                 {children}
-            </Link>
+            </a>
             <AnimatePresence>
                 {showFlyout && (
                     <motion.div initial={{ opacity: 0, y: 15 }} animate={{ opacity: 1, y: 7 }} exit={{ opacity: 0, y: 15 }} style={{ translateX: "-50%" }} transition={{ duration: 0.3, ease: "easeOut" }} className="absolute left-1/2 top-12 bg-b-200/25 backdrop-blur-sm rounded-lg text-black">
