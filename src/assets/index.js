@@ -8,6 +8,8 @@ import bizsafe from "./bizsafe.png"
 import bms from "./ecoxpertbms.png"
 import criticalpower from "./criticalpower.png"
 
+import aboutusimg from "./aboutus-img.jpg"
+
 import automation from "./automation-img.jpg"
 import it from "./it-img.jpg"
 import engineering from "./engineering-img.jpg"
@@ -35,6 +37,7 @@ export {
     bizsafe,
     bms,
     criticalpower,
+    aboutusimg,
     automation,
     it,
     engineering,

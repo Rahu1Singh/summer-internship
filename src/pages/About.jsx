@@ -1,9 +1,10 @@
 import Domains from "../components/Domains"
-import Hero from "../components/Hero"
+import AboutUsHero from "../components/AboutUsHero"
 
 const About = () => {
   return (
     <div>
+      <AboutUsHero />
       <Domains />
     </div>
   )
