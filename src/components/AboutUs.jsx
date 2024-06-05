@@ -1,5 +1,5 @@
-import Button from '../Button';
 import AboutUsImages from './AboutUsImages';
+import Button from './Button';
 
 const AboutUs = () => {
   return (

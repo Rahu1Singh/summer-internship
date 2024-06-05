@@ -58,6 +58,7 @@ export default function Carousel() {
             </TECarouselItem>
           </div>
         </TECarousel>
+        <br /> <br />
       </div>
     </div>
     <div className='absolute right-0 top-0 bg-b-400 h-full w-[70px] lg:w-[90px] z-50' />

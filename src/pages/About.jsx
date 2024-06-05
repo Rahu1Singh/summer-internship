@@ -1,14 +1,15 @@
-import AboutUs from "../components/AboutUsPage/AboutUs";
-import Footer from "../components/Footer/Footer";
+import Domains from "../components/Domains"
+import AboutUs from "../components/AboutUs"
+import Reviews from "../components/Reviews"
 
 const About = () => {
-    return (
-      <div className=''>
-        <AboutUs />
-        <Footer />
+  return (
+    <div>
+      <AboutUs />
+      <Domains />
+      <Reviews />
+    </div>
+  )
+}
 
-      </div>
-    );
-};
-
-export default About;
+export default About

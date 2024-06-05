@@ -1,6 +1,6 @@
 import { useState } from "react"
 import { NavLink as Link } from "react-router-dom"
-import { navbaritems, productitems } from "../../constants"
+import { navbaritems, productitems } from "../constants"
 import { AnimatePresence, motion } from "framer-motion"
 
 const Nav = () => {

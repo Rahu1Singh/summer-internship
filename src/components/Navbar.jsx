@@ -4,8 +4,8 @@ import { disablePageScroll, enablePageScroll } from "scroll-lock";
 import { MdMenu, MdClose } from "react-icons/md";
 import { motion, AnimatePresence } from "framer-motion";
 
-import { logo } from "../../assets";
-import Button from "../Button";
+import { logo } from "../assets";
+import Button from "./Button";
 import Nav from "./Nav";
 import Hamburger from "./Hamburger";
 

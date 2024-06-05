@@ -1,4 +1,4 @@
-import { navbaritems } from "../../constants";
+import { navbaritems } from "../constants";
 
 const Hamburger = () => {
     return (
