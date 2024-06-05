@@ -1,11 +1,13 @@
 import Hero from "../components/Hero"
+import Carousel from "../components/Carousel"
 import Brands from "../components/Brands"
 import Description from "../components/Description"
 
 const Home = () => {
   	return (
-    	<div className="relative">
+    	<div className="relative bg-b-100">
       		<Hero />
+			<Carousel />
       		<Brands />
       		<Description />
 
