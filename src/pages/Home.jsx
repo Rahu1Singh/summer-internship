@@ -1,7 +1,7 @@
-import Hero from "../components/Hero"
-import Carousel from "../components/Carousel"
-import Brands from "../components/Brands"
-import Description from "../components/Description"
+import Hero from "../components/Home/Hero.jsx"
+import Carousel from "../components/Home/Carousel.jsx"
+import Brands from "../components/Home/Brands.jsx"
+import Description from "../components/Home/Description.jsx"
 
 const Home = () => {
   	return (

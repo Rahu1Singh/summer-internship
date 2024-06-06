@@ -35,27 +35,27 @@ export const productitems = [
     {
         id: "0",
         title: "Building Automation",
-        url: "#building_automation"
+        url: "/products/building_automation"
     },
     {
         id: "1",
         title: "DCIM",
-        url: "#dcim"
+        url: "/products/dcim"
     },
     {
         id: "2",
         title: "Facility Management",
-        url: "#facility_management"
+        url: "/products/facility_management"
     },
     {
         id: "3",
         title: "Power Management",
-        url: "#power_management"
+        url: "/products/power_management"
     },
     {
         id: "4",
         title: "Safety & Security",
-        url: "#safety_security"
+        url: "/products/safety_security"
     }
 ]
 
@@ -149,3 +149,32 @@ export const domainitems = [
         icon: commercialestates,
     },
 ]
+
+//Reviews Component
+export const reviews = [
+    {
+      review: "Ingenium's commitment to excellence is evident in every aspect of their work. Their engineering and commissioning services were top-notch, and the support we received post-installation was exceptional.",
+      username: "Username 1",
+      stars: 5,
+    },
+    {
+      review: "The team did an exceptional job with our MRF Track Watering System in Tamil Nadu, India. The project was completed on time, and we are extremely satisfied with the results. Highly recommended!",
+      username: "Username 2",
+      stars: 4,
+    },
+    {
+      review: "We partnered with Ingenium Automation + Engineering for the Bridge Data Centre in Mumbai, India. They exceeded our expectations. The team was professional, responsive, and delivered high-quality work.",
+      username: "Username 3",
+      stars: 5,
+    },
+    {
+      review: "Ingenium Automation recently completed a project for us at the Digital Realty Data Centre in Hong Kong. Their expertise in using protocols like Profibus and Lonworks was evident throughout the project.",
+      username: "Username 4",
+      stars: 5,
+    },
+    {
+      review: "Our collaboration with Ingenium for the Novartis Tablet Plant in Singapore was a great success. The BMS system they implemented has been running flawlessly, and their support team has been very responsive.",
+      username: "Username 5",
+      stars: 4,
+    },
+  ];

@@ -7,7 +7,7 @@ const Nav = () => {
     return (
         <div className={`flex flex-col lg:flex-row`}>
             {navbaritems.map((item) => (
-                <FlyoutLink key={item.id} href={item.url} className={`uppercase px-8 py-6 text-base font-medium ${item.onlyMobile ? "lg:hidden" : ""} hover:text-b-800 hover:scale-[1.2] hover:font-bold transition-all`} FlyoutContent={item.title==="Products"?ProductsContent: ""}>
+                <FlyoutLink key={item.id} href={item.url} className={`px-8 py-6 text-lg font-medium ${item.onlyMobile ? "lg:hidden" : ""} hover:text-b-800 hover:scale-[1.2] hover:font-bold transition-all`} FlyoutContent={item.title==="Products"?ProductsContent: ""}>
                     {item.title}
                 </FlyoutLink>
             ))}

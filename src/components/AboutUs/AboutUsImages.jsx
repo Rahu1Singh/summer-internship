@@ -1,5 +1,5 @@
 import { ScrollParallax } from "react-just-parallax"
-import { aboutusimg } from '../assets'
+import { aboutusimg } from '../../assets'
 import { useRef } from 'react';
 
 const AboutUsImages = () => {

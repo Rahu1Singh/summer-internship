@@ -3,7 +3,7 @@ import { TECarousel, TECarouselItem } from 'tw-elements-react';
 
 export default function Carousel() {
   return (
-    <div className='relative my-20'>
+    <div className='relative my-36'>
     <div className="max-lg:hidden max-w-screen-lg mx-auto lg:px-16 xl:px-1">
       <div className="relative">
         <TECarousel showControls showIndicators ride="carousel" className="rounded-3xl">

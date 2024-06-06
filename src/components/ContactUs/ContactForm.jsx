@@ -34,7 +34,7 @@ const ContactForm = () => {
                         <input name="phone" type="phone" className="block w-full px-4 py-2 mt-2 text-b-700 bg-white border rounded-md focus:border-b-400 focus:ring-b-300 focus:outline-none focus:ring focus:ring-opacity-40" placeholder="1234567890" required />
                     </label>
                     <label className='flex-1 ml-2'>
-                        <span className="text-gray-700">Your name</span>
+                        <span className="text-gray-700">Subject</span>
                         <input type="text" name="subject" className="block w-full px-4 py-2 mt-2 text-b-700 bg-white border rounded-md focus:border-b-400 focus:ring-b-300 focus:outline-none focus:ring focus:ring-opacity-40" placeholder="Subject" />
                     </label>
                 </div>

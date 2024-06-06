@@ -25,7 +25,7 @@ const Intro = () => {
     	<div className="flex flex-col md:flex-row justify-center mt-10 py-10 md:w-3/4 mx-auto">
       		<div className="md:w-2/5 mx-10 my-5 font-bold text-xl xl:text-3xl md:text-right">SOLUTIONS & <br className="hidden md:block" />SERVICES PROVIDED <br className="hidden md:block" />AT INGENIUM</div>
       		<div className="w-[4px] bg-b-800" />
-      		<div className="md:w-3/5 mx-10">Ingenium Automation + Engineering is dedicated to providing innovative solutions and exceptional services that drive success for our clients across industries. Contact us to learn more about how we can partner with you to achieve your automation goals.</div>
+      		<div className="md:w-3/5 mx-10 flex items-center text-lg"><p>Ingenium Automation + Engineering is dedicated to providing innovative solutions and exceptional services that drive success for our clients across industries. Contact us to learn more about how we can partner with you to achieve your automation goals.</p></div>
     	</div>
   	)
 }
