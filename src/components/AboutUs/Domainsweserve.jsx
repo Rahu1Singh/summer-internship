@@ -1,4 +1,4 @@
-import { domainitems } from "../constants"
+import { domainitems } from "../../constants"
 
 const Domainsweserve = () => {
  	return ( 

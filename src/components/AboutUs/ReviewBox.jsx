@@ -1,4 +1,4 @@
-import { star } from "../assets";
+import { star } from "../../assets";
 
 const ReviewBox = ({ review }) => {
   return (

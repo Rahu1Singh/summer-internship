@@ -1,51 +1,51 @@
 import { automation , it , engineering } from "../assets"
 
 const Services = () => {
-	return (
-		<div className="relative bg-b-100">
-			<ServicesHeader />
-			<Intro />
-			<ServiceCard img={automation}><AutomationContent /></ServiceCard>
+  	return (
+    	<div className="relative bg-b-100">
+      		<ServicesHeader />
+      		<Intro />
+      		<ServiceCard img={automation}><AutomationContent /></ServiceCard>
 			<ServiceCard img={it}><ITContent /></ServiceCard>
 			<ServiceCard img={engineering}><EngineeringContent /></ServiceCard>
-		</div>
-	)
+    	</div>
+  	)
 }
 
 const ServicesHeader = () => {
-	return (
-		<div id="header" className='relative left-0 top-0 w-full h-[200px] xl:h-[460px] bg-b-200 p-10 flex items-center'>
-			<h1 className='absolute bottom-1/3 left-[5%] text-5xl xl:text-[54px] font-bold'> Solutions & Services </h1>
-		</div>
+  	return (
+    	<div id="header" className='relative left-0 top-0 w-full h-[200px] xl:h-[460px] bg-b-200 p-10 flex items-center border-b-[20px] border-b-800 rounded-bl-3xl rounded-br-3xl'>
+      		<h1 className='absolute bottom-16 left-[10%] text-5xl xl:text-[54px] font-bold text-b-900'> Solutions & <br/> Services </h1>
+    	</div>
 	)
 }
 
 const Intro = () => {
-	return (
-		<div className="flex flex-col md:flex-row justify-center mt-10 py-10 md:w-3/4 mx-auto">
-			<div className="md:w-2/5 mx-10 my-5 font-bold text-xl xl:text-3xl md:text-right">SOLUTIONS &amp; <br className="hidden md:block" />SERVICES PROVIDED <br className="hidden md:block" />AT INGENIUM</div>
-			<div className="w-[4px] bg-b-800" />
-			<div className="md:w-3/5 mx-10">Ingenium Automation + Engineering is dedicated to providing innovative solutions and exceptional services that drive success for our clients across industries. Contact us to learn more about how we can partner with you to achieve your automation goals.</div>
-		</div>
-	)
+  	return (
+    	<div className="flex flex-col md:flex-row justify-center mt-10 py-10 md:w-3/4 mx-auto">
+      		<div className="md:w-2/5 mx-10 my-5 font-semibold text-xl text-b-900 xl:text-3xl md:text-right">SOLUTIONS & <br className="hidden md:block" />SERVICES <span className="text-black">PROVIDED <br className="hidden md:block" />AT INGENIUM</span></div>
+      		<div className="w-[4px] bg-black" />
+      		<div className="md:w-3/5 mx-10 flex items-center text-[17px]"><p>Ingenium Automation + Engineering is dedicated to providing innovative solutions and exceptional services that drive success for our clients across industries. Contact us to learn more about how we can partner with you to achieve your automation goals.</p></div>
+    	</div>
+  	)
 }
 
 const ServiceCard = ({children, img}) => {
-return (
-	<div className="relative my-10 py-10">
-		<div className="relative xl:w-4/5 h-[536px] z-10 mx-auto xl:bg-b-200 xl:rounded-3xl p-10 flex flex-row items-center">
-			<div className="hidden xl:block relative m-10">
-				<div className="relative w-[400px] h-[400px] z-10 rounded-3xl" >
-					<img src={img} className='rounded-3xl object-cover h-[400px] w-[400px]'/>
+  return (
+    	<div className="relative my-10 py-10">
+    		<div className="relative xl:w-4/5 h-[536px] z-10 mx-auto xl:bg-b-200 xl:rounded-3xl p-10 flex flex-row items-center">
+				<div className="hidden xl:block relative m-10">
+					<div className="relative w-[400px] h-[400px] z-10 rounded-3xl" >
+						<img src={img} className='rounded-3xl object-cover h-[400px] w-[400px]'/>
+					</div>
+					<div className="absolute top-[20px] left-[20px] w-[400px] h-[400px] bg-b-700 rounded-3xl" />
 				</div>
-				<div className="absolute top-[20px] left-[20px] w-[400px] h-[400px] bg-b-700 rounded-3xl" />
+				{children}
 			</div>
-			{children}
-		</div>
-		<img  src={img} width={380} height={362} className="absolute xl:hidden top-0 w-full h-full object-cover opacity-65" />
-		<div className="hidden xl:block absolute w-4/5 h-[536px] top-[12%] left-[12%] bg-b-700 rounded-3xl" />
-	</div>
-)
+			<img  src={img} width={380} height={362} className="absolute xl:hidden top-0 w-full h-full object-cover opacity-65" />
+			<div className="hidden xl:block absolute w-4/5 h-[536px] top-[12%] left-[12%] bg-b-700 rounded-3xl" />
+    	</div>
+  	)
 }
 
 const AutomationContent = () => {

@@ -1,4 +1,4 @@
-import Button from "./Button";
+import Button from "../Button";
 
 const Description = () => {
     return (
@@ -12,7 +12,7 @@ const Description = () => {
                     <div className="md:w-4/5 xl:w-1/2 text-lg text-left pl-10">
                         Ingenium Automation + Engineering offers a whole range of IT & Automation products for the Process / Energy / Building and Engineering industries globally using open protocols like OPC, Modbus, Profibus, Profinet, Bacnet, Lonworks.
                         <br />
-                        <Button className='bg-b-800 rounded-md my-4 text-white border-b-800 hover:bg-white hover:text-b-800 hover:font-bold'>
+                        <Button link="/products" className='bg-b-800 rounded-md my-4 text-white border-b-800 hover:bg-transparent hover:text-b-800 hover:font-bold'>
                             Read More
                         </Button>
                     </div>
@@ -25,7 +25,7 @@ const Description = () => {
                     </div>
                     <div className="md:w-4/5 xl:w-1/2 text-lg text-left pl-10">
                         We at Ingenium Automation + Engineering are capable of Designing, Developing & installing various Solutions using different types of PLCs, Controllers, SCADA/DCS systems & drivers for our global clients.
-                        <Button className='bg-b-800 rounded-md my-4 text-white border-b-800 hover:bg-white hover:text-b-800 hover:font-bold'>
+                        <Button link="/services" className='bg-b-800 rounded-md my-4 text-white border-b-800 hover:bg-transparent hover:text-b-800 hover:font-bold'>
                             Read More
                         </Button>
                     </div>
@@ -37,7 +37,7 @@ const Description = () => {
                     </div>
                     <div className="md:w-4/5 xl:w-1/2 text-lg text-left pl-10">
                         Ingenium Automation + Engineering offers professional Engineering / Documentation / Commissioning / Validation services for global clients on a turnkey project basis.
-                        <Button className='bg-b-800 rounded-md my-4 text-white border-b-800 hover:bg-white hover:text-b-800 hover:font-bold'>
+                        <Button link="/services" className='bg-b-800 rounded-md my-4 text-white border-b-800 hover:bg-transparent hover:text-b-800 hover:font-bold'>
                             Read More
                         </Button>
                     </div>

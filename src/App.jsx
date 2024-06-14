@@ -1,4 +1,5 @@
 import Navbar from './components/Navbar'
+import Footer from './components/Footer'
 import { BrowserRouter as Router , Routes , Route} from 'react-router-dom'
 
 import Home from './pages/Home'
@@ -6,7 +7,10 @@ import About from './pages/About'
 import Products from './pages/Products'
 import Contact from './pages/Contact'
 import Services from './pages/Services'
-import Footer from './components/Footer'
+
+import BuildingAutomation from './pages/BuildingAutomation'
+import PowerManagement from './pages/PowerManagement'
+import SafetyandSecurity from './pages/SafetyandSecurity'
 
 export default function App() {
     return (
@@ -18,6 +22,10 @@ export default function App() {
                 <Route path="/products" element={<Products />} />
                 <Route path="/services" element={<Services />} />
                 <Route path="/contact" element={<Contact />} />
+
+                <Route path="/products/building_automation" element={<BuildingAutomation />} />
+                <Route path="/products/power_management" element={<PowerManagement />} />
+                <Route path="/products/safety_security" element={<SafetyandSecurity />} />
             </Routes>
             <Footer />
         </Router>

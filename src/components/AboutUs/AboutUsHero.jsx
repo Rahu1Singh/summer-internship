@@ -1,4 +1,4 @@
-import Button from './Button';
+import Button from '../Button';
 import AboutUsImages from './AboutUsImages';
 
 const AboutUsHero = () => {
@@ -18,7 +18,7 @@ const AboutUsHero = () => {
 
                         <div className='pt-4 flex flex-col items-center md:items-start justify-start w-full'>
                             <div className='w-full py-3 flex flex-row justify-start'>
-                            <Button link="/products" className='bg-g-700 mr-10 py-3 md:mr-4 mb-4 md:mb-0 text-white rounded-3xl text-lg border-g-700 hover:bg-transparent hover:text-g-800 hover:font-bold'>
+                            <Button link="/products" className='bg-g-700 mr-2 md:mr-4 mb-4 md:mb-0 text-white rounded-3xl text-lg border-g-700 hover:bg-transparent hover:text-g-800 hover:font-bold'>
                             Check our products
                             </Button>
                             </div>

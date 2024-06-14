@@ -1,6 +1,6 @@
-import Domains from "../components/Domains"
-import AboutUsHero from "../components/AboutUsHero"
-import Reviews from "../components/Reviews"
+import Domains from "../components/AboutUs/Domains"
+import AboutUsHero from "../components/AboutUs/AboutUsHero"
+import Reviews from "../components/AboutUs/Reviews"
 
 const About = () => {
   return (

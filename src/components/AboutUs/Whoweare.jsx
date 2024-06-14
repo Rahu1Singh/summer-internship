@@ -1,4 +1,4 @@
-import { whoweareitems } from "../constants"
+import { whoweareitems } from "../../constants"
 
 const Whoweare = () => {
   return (

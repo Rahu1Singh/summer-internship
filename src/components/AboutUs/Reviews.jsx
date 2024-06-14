@@ -1,11 +1,11 @@
-import { allenlogo, siemenslogo, boschlogo, honeywelllogo, danfosslogo, greystonelogo, ravellogo, matrixlogo } from "../assets";
-import { reviews } from "../constants";
+import { allenlogo, siemenslogo, boschlogo, honeywelllogo, danfosslogo, greystonelogo, ravellogo, matrixlogo } from "../../assets";
+import { reviews } from "../../constants";
 import ReviewBox from "./ReviewBox";
 
 const Reviews = () => {
   return (
     <div className="relative overflow-hidden h-full bg-g-200">
-      <div className="absolute -left-[1595px] top-[0px] h-[1200px] w-[3340px] -rotate-45 z-0 bg-g-300 "></div>
+      <div className="absolute -left-[1650px] top-[0px] h-[1200px] w-[3340px] -rotate-45 z-0 bg-g-300 "></div>
       <br />
       <div className="relative flex flex-col items-center justify-center">
         <h1 className="relative z-10 p-3 text-3xl lg:text-4xl font-bold text-b-950 my-5 lg:my-10">Loved by thousands of users alike</h1>

@@ -35,27 +35,27 @@ export const productitems = [
     {
         id: "0",
         title: "Building Automation",
-        url: "#building_automation"
+        url: "/products/building_automation"
     },
     {
         id: "1",
         title: "DCIM",
-        url: "#dcim"
+        url: "/products/dcim"
     },
     {
         id: "2",
         title: "Facility Management",
-        url: "#facility_management"
+        url: "/products/facility_management"
     },
     {
         id: "3",
         title: "Power Management",
-        url: "#power_management"
+        url: "/products/power_management"
     },
     {
         id: "4",
         title: "Safety & Security",
-        url: "#safety_security"
+        url: "/products/safety_security"
     }
 ]
 
@@ -104,7 +104,7 @@ export const whoweareitems = [
     {
         id: "4",
         title: "Ingenium @ India",
-        text: "Ingenium's origin extended to India in 2017 as Ingenium Automation India Private Limited an EcoXpert certified partner to Schneider Electric India",
+        text: "Ingenium\'s origin extended to India in 2017 as Ingenium Automation India Private Limited an EcoXpert certified partner to Schneider Electric India",
         icon: location,
     },
     {
@@ -178,4 +178,3 @@ export const reviews = [
       stars: 4,
     },
   ];
-  

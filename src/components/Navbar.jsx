@@ -29,7 +29,7 @@ const Navbar = () => {
     };
 
     return (
-        <nav className={`sticky top-0 h-[80px] w-screen flex items-center justify-between px-6 lg:justify-around ${openNavigation ? 'bg-n-8' : 'bg-b-100/80 backdrop-blur-sm'} flex-wrap bg-b-100/50 z-50`}>
+        <nav className={`sticky top-0 h-[80px] w-screen flex items-center justify-between px-6 lg:justify-around ${openNavigation ? 'bg-n-8' : 'bg-b-200/30 backdrop-blur-sm'} flex-wrap bg-b-100/50 z-50`}>
             {!openNavigation && <div>
                 <img src={logo} height={64} width={200} alt="logo" />
             </div>}
