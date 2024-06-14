@@ -28,10 +28,6 @@ const Brands = () => {
       </div>  
       <div className="absolute top-[20px] left-[20px] w-full h-full bg-b-700 rounded-3xl" /> 
       </div>
-
-
-      <div className='absolute max-md:hidden right-0 top-0 bg-b-400 h-full w-[70px] lg:w-[90px]' />
-      <div className='absolute max-md:hidden right-[70px] xl:right-[90px] top-0 bg-b-300 h-full w-[70px] xl:w-[90px]' />
     </section>
 
   )
