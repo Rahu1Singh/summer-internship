@@ -3,7 +3,7 @@ import AboutUsImages from './AboutUsImages';
 
 const AboutUsHero = () => {
     return (
-        <div className='relative'>
+        <section id="hero" className='relative'>
             <div className="bg-g-100 w-full md:min-h-screen max-2xl:flex max-2xl:items-center">
                 <div id='AboutUs' className='flex bg-g-100 my-auto px-4 md:px-8 lg:px-16 xl:px-24 2xl:px-40 py-8 md:py-16 ly:py-30 xl:py-50 2xl:py-40'>
                     <div id='heroContent' className='flex-1 relative flex flex-col items-start w-2/3 z-5'>
@@ -33,7 +33,7 @@ const AboutUsHero = () => {
                     <div className='absolute max-md:hidden right-[70px] xl:right-[90px] top-0 bg-g-300 h-full w-[70px] xl:w-[90px]' />
                 </div>
             </div>
-        </div>
+        </section>
     )
 }
 

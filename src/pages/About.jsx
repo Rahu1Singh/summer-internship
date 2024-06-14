@@ -4,11 +4,11 @@ import Reviews from "../components/AboutUs/Reviews"
 
 const About = () => {
   return (
-    <div>
+    <main>
       <AboutUsHero />
       <Domains />
       <Reviews />
-    </div>
+    </main>
   )
 }
 

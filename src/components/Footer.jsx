@@ -6,7 +6,7 @@ import Button from "./Button";
 const Footer = () => {
 	const location = useLocation();
     return (
-      <div className="static bg-b-600 text-white">
+      <footer className="static bg-b-600 text-white">
         {/* SVG wave pattern at the top */}
         <div className="text-b-100 top-0 left-0 w-full overflow-hidden leading-[0]">
           <Footerwave />
@@ -44,7 +44,7 @@ const Footer = () => {
             </p>
           
         </div>
-      </div>
+      </footer>
     );
   };
   

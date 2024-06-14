@@ -2,7 +2,7 @@ import Button from "../Button";
 
 const Description = () => {
     return (
-        <div className='relative w-full bg-b-200 p-10'>
+        <section className='relative w-full bg-b-200 p-10'>
             <div className='w-full flex flex-col items-center'>
                 <div className='xl:w-3/4 flex flex-col xl:flex-row py-10'>
                 <div className="uppercase text-left xl:w-1/3 text-3xl lg:text-4xl xl:text-4xl md:text-4xl font-medium xl:text-right px-10 py-5 lg:border-r-4 lg:border-black">
@@ -43,8 +43,7 @@ const Description = () => {
                     </div>
                 </div>
             </div>
-            
-        </div>
+        </section>
     );
 };
 

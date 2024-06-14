@@ -2,13 +2,13 @@ import { automation , it , engineering } from "../assets"
 
 const Services = () => {
   	return (
-    	<div className="relative bg-b-100">
+    	<main className="relative bg-b-100">
       		<ServicesHeader />
       		<Intro />
       		<ServiceCard img={automation}><AutomationContent /></ServiceCard>
 			<ServiceCard img={it}><ITContent /></ServiceCard>
 			<ServiceCard img={engineering}><EngineeringContent /></ServiceCard>
-    	</div>
+    	</main>
   	)
 }
 

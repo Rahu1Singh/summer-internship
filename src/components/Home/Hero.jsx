@@ -5,7 +5,7 @@ import Button from '../Button';
 
 const Hero = () => {
     return (
-        <div id='hero' className='relative flex bg-b-100 px-4 md:px-8 lg:px-16 xl:px-24 2xl:px-40 pt-8 md:pt-16 lg:pt-30 xl:pt-50 2xl:pt-20 h-screen'>
+        <section id='hero' className='relative flex bg-b-100 px-4 md:px-8 lg:px-16 xl:px-24 2xl:px-40 pt-8 md:pt-16 lg:pt-30 xl:pt-50 2xl:pt-20 h-screen'>
             <div id='heroContent' className='flex-1 relative flex flex-col items-start w-2/3 z-5'>
                 <h1 className='pb-10 py-10 text-4xl md:text-5xl lg:text-5xl xl:text-6xl font-extrabold leading-tight text-left'>
                     Engineering innovation <br />& empowering futures<br /> with <span className='text-b-800'>innovative <br />solutions.</span>
@@ -21,10 +21,10 @@ const Hero = () => {
                         <p className='text-base md:text-lg lg:text-xl font-bold'>Ingenium Automation is your partner for innovative solutions.</p>
                     </div>
                     <div className='w-full py-3 flex flex-row justify-start'>
-                        <Button link='/products'  className='bg-b-800 mr-10 py-3 md:mr-4 mb-4 md:mb-0 text-white rounded-3xl text-lg border-b-800 hover:bg-transparent hover:text-b-800 hover:font-bold'>
+                        <Button link='/products'  className='bg-b-800 mr-10 py-3 md:mr-4 mb-4 md:mb-0 text-white rounded-3xl text-lg border-b-800 hover:bg-transparent hover:text-b-800 font-semibold'>
                             Check out products
                         </Button>
-                        <Button link='/services' className='bg-transparent mr-10 py-3 md:mr-4 mb-4 md:mb-0 text-lg rounded-3xl text-b-800 border-b-800 hover:bg-b-800 hover:text-white hover:font-bold'>
+                        <Button link='/services' className='bg-transparent mr-10 py-3 md:mr-4 mb-4 md:mb-0 text-lg rounded-3xl text-b-800 border-b-800 hover:bg-b-800 hover:text-white font-semibold'>
                             Solutions & Services
                         </Button>
                     </div>
@@ -37,7 +37,7 @@ const Hero = () => {
 
             <div className='absolute max-md:hidden right-0 top-0 bg-b-400 h-full w-[70px] lg:w-[90px]' />
             <div className='absolute max-md:hidden right-[70px] xl:right-[90px] top-0 bg-b-300 h-full w-[70px] xl:w-[90px]' />
-        </div>
+        </section>
     );
 };
 

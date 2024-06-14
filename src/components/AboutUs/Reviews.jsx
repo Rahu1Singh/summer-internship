@@ -4,7 +4,7 @@ import ReviewBox from "./ReviewBox";
 
 const Reviews = () => {
   return (
-    <div className="relative overflow-hidden h-full bg-g-200">
+    <section id="reviews" className="relative overflow-hidden h-full bg-g-200">
       <div className="absolute -left-[1650px] top-[0px] h-[1200px] w-[3340px] -rotate-45 z-0 bg-g-300 "></div>
       <br />
       <div className="relative flex flex-col items-center justify-center">
@@ -29,7 +29,7 @@ const Reviews = () => {
           <img src={matrixlogo} className="m-5 h-16 md:h-20 lg:h-20 p-2" alt="SME 500" />
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 
