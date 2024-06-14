@@ -21,10 +21,10 @@ const Hero = () => {
                         <p className='text-base md:text-lg lg:text-xl font-bold'>Ingenium Automation is your partner for innovative solutions.</p>
                     </div>
                     <div className='w-full py-3 flex flex-row justify-start'>
-                        <Button className='bg-b-800 mr-10 py-3 md:mr-4 mb-4 md:mb-0 text-white rounded-3xl text-lg border-b-800 hover:bg-white hover:text-b-800 hover:font-bold'>
+                        <Button link='/products'  className='bg-b-800 mr-10 py-3 md:mr-4 mb-4 md:mb-0 text-white rounded-3xl text-lg border-b-800 hover:bg-transparent hover:text-b-800 hover:font-bold'>
                             Check out products
                         </Button>
-                        <Button className='bg-transparent mr-10 py-3 md:mr-4 mb-4 md:mb-0 text-lg rounded-3xl text-b-800 border-b-800 hover:bg-b-800 hover:text-white hover:font-bold'>
+                        <Button link='/services' className='bg-transparent mr-10 py-3 md:mr-4 mb-4 md:mb-0 text-lg rounded-3xl text-b-800 border-b-800 hover:bg-b-800 hover:text-white hover:font-bold'>
                             Solutions & Services
                         </Button>
                     </div>

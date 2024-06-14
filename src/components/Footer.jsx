@@ -1,6 +1,7 @@
 import { navbaritems } from "../constants";
 import { Footerwave } from "./Footerwave";
-import { useLocation } from "react-router-dom"
+import { useLocation } from "react-router-dom";
+import Button from "./Button";
 
 const Footer = () => {
 	const location = useLocation();
@@ -16,11 +17,11 @@ const Footer = () => {
             Want to get your queries answered? <br /> Let&apos;s talk!
           </h1>
           <div className={`${location.pathname === "/contact" ? "hidden" : "container mx-0 min-w-full flex flex-col items-center"}`}>
-            <a
+            <Button
               className="mt-8 xl:mt-12 px-12 py-5 mx-auto text-lg font-medium leading-tight inline-block rounded-full shadow-xl  bg-b-800 text-whitebg hover:bg-whitebg hover:text-b-600 hover:font-bold hover:border-solid hover:border-[3px] hover:border-b-600 transition-all"
-              href="#">
+              link="/contact">
               Contact Us
-            </a>
+            </Button>
           </div>
   
           <div className="mt-10 xl:mt-20">

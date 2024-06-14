@@ -7,7 +7,6 @@ const Home = () => {
   	return (
     	<div className="relative bg-b-100">
       		<Hero />
-			<Carousel />
       		<Brands />
       		<Description />
 

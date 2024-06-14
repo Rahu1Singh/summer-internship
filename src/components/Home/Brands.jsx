@@ -2,7 +2,7 @@ import { schneiderlogo, hikvisionlogo, sme500, bizsafe, bms, criticalpower } fro
 
 const Brands = () => {
   return (
-    <div className='relative flex flex-col items-center py-5 md:py-20 bg-b-100'>
+    <section className='relative flex flex-col items-center py-5 md:py-20 bg-b-100'>
       {/* Partnered By Section */}
       <div className="relative w-full max-w-5xl my-5">
         <div className="relative z-20 bg-b-200 rounded-3xl p-0.5">
@@ -32,7 +32,7 @@ const Brands = () => {
 
       <div className='absolute max-md:hidden right-0 top-0 bg-b-400 h-full w-[70px] lg:w-[90px]' />
       <div className='absolute max-md:hidden right-[70px] xl:right-[90px] top-0 bg-b-300 h-full w-[70px] xl:w-[90px]' />
-    </div>
+    </section>
 
   )
 }

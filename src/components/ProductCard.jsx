@@ -17,7 +17,7 @@ const ProductCard = ({className}) => {
             Apps, analytics & services 
           </p> 
         </div> 
-        <Button className="z-10 text-lg font-medium max-lg:text-lg justify-center self-center p-2 leading-5 bg-g-600 text-white border-g-600 hover:bg-white hover:text-g-800 hover:font-bold rounded-[48px]">
+        <Button link="/contact" className="z-10 text-lg font-medium max-lg:text-lg justify-center self-center p-2 leading-5 bg-g-600 text-white border-g-600 hover:bg-white hover:text-g-800 hover:font-bold rounded-[48px]">
           Contact Sales
         </Button>
       </article> 
