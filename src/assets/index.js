@@ -39,6 +39,7 @@ import iso from "./icons/iso.png"
 import lifescience from "./icons/lifescience.png"
 import location from "./icons/location.png"
 import professional from "./icons/professional.png"
+import foodandbeverages from "./icons/foodandbeverages.png"
 
 //products images
 import ecostruxurelogo from "./images/productimages/ecostruxurelogo.png"
@@ -47,6 +48,7 @@ import bosimg from "./images/productimages/bosimg.png"
 import pmsimg from "./images/productimages/pmsimg.png"
 import cctvimg from "./images/productimages/cctvimg.png"
 import acimg from "./images/productimages/acimg.png"
+import ourprod from "./images/ourproducts.jpg"
 
 //product icons
 //bms
@@ -112,12 +114,14 @@ export {
     datacenter,
     experience,
     healthcare,
+    foodandbeverages,
     hikvision,
     hotels,
     iso,
     lifescience,
     location,
     professional,
+    ourprod,
 
     ecostruxurelogo,
     bmsimg1,

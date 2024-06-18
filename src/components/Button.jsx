@@ -1,4 +1,4 @@
-const defaultClass = " text-white my-4 rounded-md border-green-700 bg-green-700 hover:bg-b-100/0 hover:text-green-700 hover:font-bold"
+const defaultClass = " text-white my-4 rounded-md border-b-700 bg-b-700 hover:bg-b-100/0 hover:text-b-700 hover:font-bold"
 
 const Button = ({className, link, children}) => {
   return ( 
