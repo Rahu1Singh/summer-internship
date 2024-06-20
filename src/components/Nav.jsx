@@ -26,7 +26,7 @@ const FlyoutLink = ({children, href, FlyoutContent, className}) => {
             </a>
             <AnimatePresence>
                 {showFlyout && (
-                    <motion.div initial={{ opacity: 0, y: 15 }} animate={{ opacity: 1, y: 7 }} exit={{ opacity: 0, y: 15 }} style={{ translateX: "-50%" }} transition={{ duration: 0.3, ease: "easeOut" }} className="absolute left-1/2 top-12 bg-b-200/65 backdrop-blur-xl rounded-lg text-black">
+                    <motion.div initial={{ opacity: 0, y: 15 }} animate={{ opacity: 1, y: 7 }} exit={{ opacity: 0, y: 15 }} style={{ translateX: "-50%" }} transition={{ duration: 0.3, ease: "easeOut" }} className="absolute left-1/2 top-12 bg-whitebg rounded-lg text-black">
                         <div className="absolute -top-6 left-0 right-0 h-6 bg-transparent" />
                         <FlyoutContent />
                     </motion.div>
