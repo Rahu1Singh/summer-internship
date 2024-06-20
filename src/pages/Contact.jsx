@@ -1,10 +1,12 @@
+import Addresses from "../components/ContactUs/Addersses"
 import ContactForm from "../components/ContactUs/ContactForm"
 
 const Contact = () => {
     return (
-        <div>
+        <main>
             <ContactForm />
-        </div>
+            <Addresses />
+        </main>
   	)
 }
 

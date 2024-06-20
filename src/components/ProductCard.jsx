@@ -1,27 +1,17 @@
 import Button from "./Button";
-import { bosimg } from "../assets";
 
-const defaultClass = ""
-
-const ProductCard = ({className}) => {
+const ProductCard = ({name, img, desc, link}) => {
   return ( 
-    <section className={` ${className ? className : defaultClass} flex flex-col pt-3 max-w-[250px] text-slate-900 space-y-4`}> 
-      <article className={`flex flex-col pb-4 mt-4 w-full bg-white rounded-2xl border border-solid border-g-800 shadow-lg space-y-4`}> 
-        
-        <div className="flex flex-col px-5 -mt-3 w-full space-y-2"> 
-          <img loading="lazy" src={bosimg} alt="Ecostruxture Building Advisor" className="self-center aspect-[1.01] w-[200px]" /> 
-          <h2 className="text-xl font-semibold">
-            Ecostruxture Building Advisor
-          </h2> 
-          <p className="text-base text-left leading-6"> 
-            Apps, analytics & services 
-          </p> 
+      <article className={`max-w-[280px] max-h-[420px] flex flex-col justify-between pb-4 mt-4 w-full bg-white rounded-2xl border border-solid border-b-800 shadow-lg space-y-8`}> 
+        <div className="flex flex-col justify-between px-5 -mt-3 w-full"> 
+          <img loading="lazy" src={img} alt={name} className="self-center aspect-[1.01] w-[160px] my-10" />
+          <h2 className="text-xl font-semibold my-2">{name}</h2> 
+          <p className="text-base text-left">{desc}</p>
         </div> 
-        <Button link="/contact" className="z-10 text-lg font-medium max-lg:text-lg justify-center self-center p-2 leading-5 bg-g-600 text-white border-g-600 hover:bg-white hover:text-g-800 hover:font-bold rounded-[48px]">
-          Contact Sales
+        <Button link={link} className="z-10 text-md font-medium justify-center self-center bg-b-600 text-white border-b-600 hover:bg-transparent hover:text-b-800 hover:font-bold rounded-3xl">
+          Learn More
         </Button>
       </article> 
-    </section> 
   ); 
 };
 

@@ -8,6 +8,7 @@ import sme500 from "./images/sme500.png"
 import bizsafe from "./images/bizsafe.png"
 import bms from "./images/ecoxpertbms.png"
 import criticalpower from "./images/criticalpower.png"
+import contactimg from "./images/contactBg.jpg"
 
 //aboutus images
 import aboutusimg from "./images/aboutus-img.jpg"
@@ -21,10 +22,6 @@ import ravellogo from "./images/ravel.png"
 import matrixlogo from "./images/matrix.png"
 import star from "./icons/star.png"
 
-//solutions and services images
-import automation from "./images/automation-img.jpg"
-import it from "./images/it-img.jpg"
-import engineering from "./images/engineering-img.jpg"
 
 //aboutus icons
 import airports from "./icons/airports.png"
@@ -48,7 +45,9 @@ import bosimg from "./images/productimages/bosimg.png"
 import pmsimg from "./images/productimages/pmsimg.png"
 import cctvimg from "./images/productimages/cctvimg.png"
 import acimg from "./images/productimages/acimg.png"
-import ourprod from "./images/ourproducts.jpg"
+import bmsarch from "./images/productimages/bmsarch.jpg"
+import pmsarch from "./images/productimages/pmsarch.webp"
+import dcimarch from "./images/productimages/dcimarch.png"
 
 //product icons
 //bms
@@ -83,6 +82,18 @@ import flap from "./icons/producticons/speedicon.png"
 import tripod from "./icons/producticons/tripodgateicon.png"
 import barriergate from "./icons/producticons/barriergateicon.png"
 
+//dcim
+import change from "./icons/change.png"
+import cooling from  "./icons/cooling.png"
+import energy from "./icons/energy.png"
+import quality from "./icons/quality.png"
+import server from "./icons/server.png"
+
+//services
+import automationimg from "./images/automationimg.jpg"
+import itimg from "./images/itimg.jpg"
+import engineeringimg from "./images/engineeringimg.jpg"
+
 export {
     logo, 
     heroImg1, 
@@ -93,6 +104,7 @@ export {
     bizsafe,
     bms,
     criticalpower,
+    contactimg,
 
     aboutusimg,
     allenlogo,
@@ -105,23 +117,19 @@ export {
     siemenslogo,
     star,
     
-    automation,
-    it,
-    engineering,
     airports,
     certified,
     commercialestates,
     datacenter,
     experience,
     healthcare,
-    foodandbeverages,
     hikvision,
     hotels,
     iso,
     lifescience,
     location,
     professional,
-    ourprod,
+    foodandbeverages,
 
     ecostruxurelogo,
     bmsimg1,
@@ -129,6 +137,9 @@ export {
     pmsimg,
     cctvimg,
     acimg,
+    bmsarch,
+    pmsarch,
+    dcimarch,
 
     ipicon,
     enterprise,
@@ -155,4 +166,14 @@ export {
     flap,
     tripod,
     barriergate,
+
+    change,
+    cooling,
+    energy,
+    quality,
+    server,
+
+    automationimg,
+    itimg,
+    engineeringimg,
 };

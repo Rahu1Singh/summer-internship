@@ -1,33 +1,34 @@
-import { automation , it , engineering } from "../assets"
+import { automationimg, itimg, engineeringimg } from "../assets"
 
 const Services = () => {
   	return (
-    	<div className="relative bg-b-100">
+    	<main className="relative bg-b-100">
       		<ServicesHeader />
       		<Intro />
-      		<ServiceCard img={automation}><AutomationContent /></ServiceCard>
-			<ServiceCard img={it}><ITContent /></ServiceCard>
-			<ServiceCard img={engineering}><EngineeringContent /></ServiceCard>
-    	</div>
+      		<ServiceCard img={automationimg}><AutomationContent /></ServiceCard>
+			<ServiceCard img={itimg}><ITContent /></ServiceCard>
+			<ServiceCard img={engineeringimg}><EngineeringContent /></ServiceCard>
+    	</main>
   	)
 }
 
 const ServicesHeader = () => {
-  	return (
-    	<div id="header" className='relative left-0 top-0 w-full h-[200px] xl:h-[460px] bg-b-200 p-10 flex items-center border-b-[20px] border-b-800 rounded-bl-3xl rounded-br-3xl'>
-      		<h1 className='absolute bottom-16 left-[10%] text-5xl xl:text-[54px] font-bold text-b-900'> Solutions & <br/> Services </h1>
-    	</div>
-	)
+	return (
+	  <div id="header" className='relative left-0 top-0 w-full h-[200px] xl:h-[460px] bg-b-200 p-10 flex items-center border-b-[20px] border-b-800 rounded-bl-3xl rounded-br-3xl' style={{backgroundImage: `url(https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)`, backgroundSize:'cover', backgroundPosition:'0%  60%'}}>
+		<div className='absolute inset-0 bg-black/40 rounded-bl-3xl rounded-br-3xl'></div>
+			<h1 className='absolute bottom-16 left-[10%] text-5xl xl:text-[54px] font-bold text-b-200'> Solutions & <br/> Services </h1>
+	  </div>
+  )
 }
 
 const Intro = () => {
-  	return (
-    	<div className="flex flex-col md:flex-row justify-center mt-10 py-10 md:w-3/4 mx-auto">
-      		<div className="md:w-2/5 mx-10 my-5 font-semibold text-xl text-b-900 xl:text-3xl md:text-right">SOLUTIONS & <br className="hidden md:block" />SERVICES <span className="text-black">PROVIDED <br className="hidden md:block" />AT INGENIUM</span></div>
-      		<div className="w-[4px] bg-black" />
-      		<div className="md:w-3/5 mx-10 flex items-center text-[17px]"><p>Ingenium Automation + Engineering is dedicated to providing innovative solutions and exceptional services that drive success for our clients across industries. Contact us to learn more about how we can partner with you to achieve your automation goals.</p></div>
-    	</div>
-  	)
+	return (
+	  <div className="flex flex-col md:flex-row justify-center mt-10 py-10 md:w-3/4 mx-auto">
+			<div className="md:w-2/5 mx-10 my-5 font-semibold text-xl text-b-900 xl:text-3xl md:text-right">SOLUTIONS & <br className="hidden md:block" />SERVICES <span className="text-black">PROVIDED <br className="hidden md:block" />AT INGENIUM</span></div>
+			<div className="w-[4px] bg-black" />
+			<div className="md:w-3/5 mx-10 flex items-center text-[17px]"><p>Ingenium Automation + Engineering is dedicated to providing innovative solutions and exceptional services that drive success for our clients across industries. Contact us to learn more about how we can partner with you to achieve your automation goals.</p></div>
+  	</div>
+  	)
 }
 
 const ServiceCard = ({children, img}) => {

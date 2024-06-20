@@ -1,33 +1,31 @@
 import Whoweare from "./Whoweare";
 import Domainsweserve from "./Domainsweserve";
 import BrandsExpertised from "./BrandsExpertised";
-
+import Projects from "./Projects";
 
 const Domains = () => {
     return (
-        <div id="domains" className="relative w-full bg-b-100 overflow-hidden flex flex-col items-center">
-            <h1 className="z-10 text-3xl lg:text-5xl font-bold text-b-950 mt-20">Who Are We?</h1>
-            <div id="whoweare" className="my-10 relative p-5 flex justify-center items-center w-full max-w-4xl">
+        <section id="domains" className="relative w-full bg-b-100 overflow-hidden flex flex-col items-center">
+            <div id="whoweare" className="relative my-5 p-5 flex flex-col justify-center items-center w-full z-30">
+                <h1 className="z-30 text-[50px] font-bold text-b-950 my-2 lg:my-5">Who We Are</h1>
                 <Whoweare />
-                <div className="hidden md:block absolute md:top-[50px] md:right-[140px] lg:top-[50px] lg:left-[70px] z-10 h-[750px] w-[450px] lg:h-[700px] lg:w-[700px] rounded-2xl bg-b-800" />
             </div>
-            
-            <div className="my-10 relative p-5 flex flex-col justify-center items-center w-full">
-                 <h1 className="z-10 text-3xl lg:text-5xl leading-[56px] text-center font-bold text-b-950">Domains We Serve</h1>
-                 <Domainsweserve />
+            <div className="my-5 relative p-5 flex flex-col justify-center items-center w-full z-30">
+                <h1 className="z-30 text-[50px] text-center font-bold text-b-950 my-2 lg:my-5">Domains We Serve</h1>
+                <Domainsweserve />
             </div>
-
-            <div className="my-10 relative">
-                <h1 className="z-10 relative text-center -mt-10 mb-5 text-3xl lg:text-5xl font-bold text-b-950">Brands Expertised</h1>
+            <div className="z-30 w-full flex flex-col items-center justify-center my-5">
+                <h1 className="z-10 text-[50px] text-center font-bold text-b-950 my-2 lg:my-5">Projects</h1>
+                <Projects />
+            </div>
+            <div className="my-5 z-20 relative">
+                <h1 className="z-10 text-[50px] text-center font-bold text-b-950 my-2 lg:my-5">Brands Expertised</h1>
                 <BrandsExpertised />
             </div>
 
-            
-            <div className="absolute -left-[1500px] top-[200px] h-[1000px] w-[3000px] -rotate-45 z-0 bg-b-300"></div>
-            <div className="absolute top-[1080px] -left-[600px] h-[1800px] w-[2600px] -rotate-45 z-0 bg-b-300"></div>
-       
-
-        </div>
+            <div className="absolute -left-[950px] top-[650px] h-[900px] w-[3370px] -rotate-45 z-0 bg-b-300"></div>
+            <div className="absolute top-[1375px] left-[627px] h-[1600px] w-[1600px] -rotate-45 z-0 bg-b-400"></div>
+        </section>
     );
 };
 
