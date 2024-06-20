@@ -23,7 +23,7 @@ const PowerManagement = () => {
 
 const Header = () => {
   return (
-    <section id="header" className='relative left-0 top-0 w-full h-[200px] xl:h-[460px] bg-b-200 p-10 flex items-center border-b-[20px] border-b-800 rounded-bl-3xl rounded-br-3xl'>
+    <section id="header" className='relative left-0 top-0 w-full h-[200px] xl:h-[460px] bg-b-200 p-10 flex items-center border-b-[20px] border-b-800 rounded-bl-3xl rounded-br-3xl' style={{backgroundImage: 'url(https://group.met.com/media/uhzbyhma/electrical-energy.jpg)', backgroundPosition: "100% 70%"}}>
         <h1 className='absolute bottom-16 left-[10%] text-3xl lg:text-6xl font-bold text-b-900'>
           Power Management <br/> System
         </h1>

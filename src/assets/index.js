@@ -82,7 +82,14 @@ import flap from "./icons/producticons/speedicon.png"
 import tripod from "./icons/producticons/tripodgateicon.png"
 import barriergate from "./icons/producticons/barriergateicon.png"
 
-//services
+//dcim
+import change from "./icons/producticons/change.png"
+import cooling from  "./icons/producticons/cooling.png"
+import energy from "./icons/producticons/energy.png"
+import quality from "./icons/producticons/quality.png"
+import server from "./icons/producticons/server.png"
+
+//services images
 import automationimg from "./images/automationimg.jpg"
 import itimg from "./images/itimg.jpg"
 import engineeringimg from "./images/engineeringimg.jpg"
@@ -159,6 +166,12 @@ export {
     flap,
     tripod,
     barriergate,
+
+    change,
+    cooling,
+    energy,
+    quality,
+    server,
 
     automationimg,
     itimg,

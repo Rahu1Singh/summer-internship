@@ -14,8 +14,9 @@ const Services = () => {
 
 const ServicesHeader = () => {
 	return (
-	  <div id="header" className='relative left-0 top-0 w-full h-[200px] xl:h-[460px] bg-b-200 p-10 flex items-center border-b-[20px] border-b-800 rounded-bl-3xl rounded-br-3xl'>
-			<h1 className='absolute bottom-16 left-[10%] text-5xl xl:text-[54px] font-bold text-b-900'> Solutions & <br/> Services </h1>
+	  <div id="header" className='relative left-0 top-0 w-full h-[200px] xl:h-[460px] bg-b-200 p-10 flex items-center border-b-[20px] border-b-800 rounded-bl-3xl rounded-br-3xl' style={{backgroundImage: "url(https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)", backgroundSize: "cover", backgroundPosition: "0% 50%"}}>
+			<div className='absolute inset-0 bg-black/50' />
+			<h1 className='absolute bottom-16 left-[10%] text-5xl xl:text-[54px] font-bold text-b-300'> Solutions & <br/> Services </h1>
 	  </div>
   )
 }

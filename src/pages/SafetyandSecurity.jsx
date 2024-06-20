@@ -2,6 +2,7 @@ import EcostruxureFire from "../components/SafetyandSecurity/EcostruxureFire"
 import HikvisionCCTV from "../components/SafetyandSecurity/HikvisionCCTV"
 import HikvisionAC from "../components/SafetyandSecurity/HikvisionAC"
 import ProductsGrid from "../components/ProductsGrid"
+import { fireproducts } from "../constants"
 
 const SafetyandSecurity = () => {
   return (
@@ -9,19 +10,22 @@ const SafetyandSecurity = () => {
       <Header />
       <Intro />
       <EcostruxureFire />
-      <ProductsGrid />
+      <div className="my-32" />
+      {/*<ProductsGrid productlist={fireproducts}/>*/}
       <HikvisionCCTV />
-      <ProductsGrid />
+      <div className="my-32" />
+      {/*<ProductsGrid />*/}
       <HikvisionAC />
-      <ProductsGrid />
+      <div className="my-32" />
+      {/*<ProductsGrid />*/}
     </main>
   )
 }
 
 const Header = () => {
   return (
-    <section id="header" className='relative left-0 top-0 w-full h-[200px] xl:h-[460px] bg-b-200 p-10 flex items-center border-b-[20px] border-b-800 rounded-bl-3xl rounded-br-3xl'>
-        <h1 className='absolute bottom-16 left-[10%] text-3xl xl:text-6xl font-bold text-b-900'>
+    <section id="header" className='relative left-0 top-0 w-full h-[200px] xl:h-[460px] bg-b-200 p-10 flex items-center border-b-[20px] border-b-800 rounded-bl-3xl rounded-br-3xl' style={{backgroundImage: 'url(https://www.saltek.eu/files/solution/22/default/Kamerove_systemy-v2.webp)',backgroundSize: 'cover', backgroundPosition: "100% 60%"}}>
+        <h1 className='absolute bottom-16 left-[10%] text-3xl xl:text-6xl font-bold text-b-300'>
           Safety & Security <br /> Systems
         </h1>
     </section>

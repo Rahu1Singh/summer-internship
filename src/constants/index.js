@@ -155,35 +155,44 @@ export const domainitems = [
     }
 ]
 
-//Reviews Component
-export const reviews = [
+import {change, cooling, energy, quality, server} from "../assets"
+export const dcimops = [
     {
-      review: "Ingenium's commitment to excellence is evident in every aspect of their work. Their engineering and commissioning services were top-notch, and the support we received post-installation was exceptional.",
-      username: "Username 1",
-      stars: 5,
+        id: "0",
+        text: "Capacity",
+        icon: datacenter,
     },
     {
-      review: "The team did an exceptional job with our MRF Track Watering System in Tamil Nadu, India. The project was completed on time, and we are extremely satisfied with the results. Highly recommended!",
-      username: "Username 2",
-      stars: 4,
+        id: "1",
+        text: "Energy Efficiency",
+        icon: energy,
     },
     {
-      review: "We partnered with Ingenium Automation + Engineering for the Bridge Data Centre in Mumbai, India. They exceeded our expectations. The team was professional, responsive, and delivered high-quality work.",
-      username: "Username 3",
-      stars: 5,
+        id: "2",
+        text: "Cooling Optimization",
+        icon: cooling,
     },
     {
-      review: "Ingenium Automation recently completed a project for us at the Digital Realty Data Centre in Hong Kong. Their expertise in using protocols like Profibus and Lonworks was evident throughout the project.",
-      username: "Username 4",
-      stars: 5,
+        id: "3",
+        text: "Server Access",
+        icon: server,
     },
     {
-      review: "Our collaboration with Ingenium for the Novartis Tablet Plant in Singapore was a great success. The BMS system they implemented has been running flawlessly, and their support team has been very responsive.",
-      username: "Username 5",
-      stars: 4,
+        id: "4",
+        text: "Change",
+        icon: change,
     },
-];
-
+    {
+        id: "5",
+        text: "Capacity",
+        icon: quality,
+    },
+    {
+        id: "6",
+        text: "StruxureWare Operation",
+        icon: certified,
+    }
+]
 
 
 
@@ -295,5 +304,118 @@ export const pmsproducts = [
 	    img: "https://download.schneider-electric.com/files?p_Doc_Ref=63370_image-of-range&p_File_Type=rendition_369_jpg&default_image=DefaultProductImage.png",
 	    desc: "EasyLogic Power & Energy meter POP/RS,IO",
 	    link: "https://www.se.com/us/en/product-range/63370-pm2000-series/",
+    },
+]
+
+//safety & security
+export const fireproducts = [
+    {
+        id: "0",
+        name: "Esmi Fire Detection Panels UL",
+        img: "https://download.schneider-electric.com/files?p_Doc_Ref=Esmi_Ultima_Fire_alarm_Panel&p_File_Type=rendition_369_jpg&default_image=DefaultProductImage.png",
+        desc: "Flexible, analogue addressable UL 864 approved fire alarm panels",
+        link: "https://www.se.com/in/en/product-range/66361-esmi-fire-detection-panels-ul/?parent-subcategory-id=86785",
+    },
+    {
+        id: "1",
+        name: "Esmi Conventional Components",
+        img: "https://download.schneider-electric.com/files?p_Doc_Ref=Esmi_range_photo_conven_UL&p_File_Type=rendition_369_jpg&default_image=DefaultProductImage.png",
+        desc: "Conventional detection products and components",
+        link: "https://www.se.com/in/en/product-range/66363-esmi-conventional-components-ul/?parent-subcategory-id=86785",
+    },
+    {
+        id: "2",
+        name: "Esmi Addressable Components",
+        img: "https://download.schneider-electric.com/files?p_Doc_Ref=Esmi_Addressable_range_photo&p_File_Type=rendition_369_jpg&default_image=DefaultProductImage.png",
+        desc: "High quality addressable detection components for all needs",
+        link: "https://www.se.com/in/en/product-range/66362-esmi-addressable-components-for-ultima-range-ul/?parent-subcategory-id=86785",
+    },
+    {
+        id: "3",
+        name: "Esmi Fire Detection Panels EN 54",
+        img: "https://download.schneider-electric.com/files?p_Doc_Ref=Esmi_fire_detection_panels_vs1&p_File_Type=rendition_369_jpg&default_image=DefaultProductImage.png",
+        desc: "Modular, user-friendly fire detection panels",
+        link: "https://www.se.com/in/en/product-range/63651-esmi-fire-detection-panels-en-54/?parent-subcategory-id=86785",
+    },
+    {
+        id: "4",
+        name: "Esmi Addressable Components EN 54",
+        img: "https://download.schneider-electric.com/files?p_Doc_Ref=Esmi_addressable_components_for_alc_range&p_File_Type=rendition_369_jpg&default_image=DefaultProductImage.png",
+        desc: "High quality detection products and components for all needs",
+        link: "https://www.se.com/in/en/product-range/63652-esmi-addressable-components-for-alc-range-en-54/?parent-subcategory-id=86785",
+    },
+    {
+        id: "5",
+        name: "Esmi Conventional Components EN 54",
+        img: "https://download.schneider-electric.com/files?p_Doc_Ref=Esmi_conventional_components&p_File_Type=rendition_369_jpg&default_image=DefaultProductImage.png",
+        desc: "High quality conventional detection products",
+        link: "https://www.se.com/in/en/product-range/63654-esmi-conventional-components-en-54/?parent-subcategory-id=86785#overview",
+    },
+    {
+        id: "6",
+        name: "Esmi Fire Software",
+        img: "https://download.schneider-electric.com/files?p_Doc_Ref=Ecostruxure_Fire_Expert&p_File_Type=rendition_369_jpg&default_image=DefaultProductImage.png",
+        desc: "Online application for Esmi fire detection systems",
+        link: "https://www.se.com/in/en/product-range/63656-esmi-fire-software-and-online-applications/?parent-subcategory-id=86785#overview",
+    },
+]
+
+//dcim 
+export const dcimproducts = [
+    {
+        id: "0",
+	    name: "Galaxy UPS",
+	    img: "https://download.schneider-electric.com/files?p_Doc_Ref=GalaxyVL_RNG_V&p_File_Type=rendition_369_jpg",
+	    desc: "Highly efficient, simple-to-deploy, compact 3-phase UPS power protection",
+	    link: "https://www.se.com/in/en/work/products/master-ranges/galaxy/",
+    },
+    {
+        id: "1",
+	    name: "Galaxy Li-Ion Battery Systems",
+	    img: "https://download.schneider-electric.com/files?p_Doc_Ref=GalaxyLithium-ion__RNG&p_File_Type=rendition_369_jpg&default_image=DefaultProductImage.png",
+	    desc: "A compact, lightweight and long-lasting battery solution for UPS",
+	    link: "https://www.se.com/in/en/product-range/66102-galaxy-lithiumion-battery-systems/?parent-category-id=8000&parent-subcategory-id=8030&filter=business-3-critical-power-cooling-and-racks",
+    },
+    {
+        id: "2",
+	    name: "SpaceLogic Communicating Sensors",
+	    img: "https://download.schneider-electric.com/files?p_Doc_Ref=comm-sensors-range-image&p_File_Type=rendition_369_jpg&default_image=DefaultProductImage.png",
+	    desc: "Comprehensive sensing, high comfort experience",
+	    link: "https://www.se.com/in/en/product-range/8297100-spacelogic-communicating-sensors/?parent-category-id=88878&parent-subcategory-id=89226&filter=business-2-building-automation-and-control",
+    },
+    {
+        id: "3",
+	    name: "Smart-UPS",
+	    img: "https://www.se.com/in/en/assets/v2/380/media/8113/900/SmartUPS_Family_LCD_Reflc-IC-900x500.jpg",
+	    desc: "protect equipment and critical data from costly interruptions",
+	    link: "https://www.se.com/in/en/work/products/master-ranges/smart-ups/",
+    },
+    {
+        id: "4",
+	    name: "EcoStruxure™ Building Advisor",
+	    img: "https://download.schneider-electric.com/files?p_Doc_Ref=EcoStruxure-Building-Advisor&p_File_Type=rendition_369_jpg&default_image=DefaultProductImage.png",
+	    desc: "Building management services with HVAC analytics",
+	    link: "https://www.se.com/us/en/product-range/39297330-ecostruxure-building-advisor/#overview",
+    },
+    {
+        id: "5",
+	    name: "Automation Server - Premium",
+	    img: "https://ecostruxure-building-help.se.com/graphics/en-US/graphics380918.png",
+	    desc: "Core of the Management System",
+	    link: "https://www.se.com/in/en/download/document/03-14020-en/",
+    },
+    {
+        id: "6",
+	    name: "Room Purpose Controller",
+	    img: "https://download.schneider-electric.com/files?p_Doc_Ref=range-66378&p_File_Type=rendition_369_jpg&default_image=DefaultProductImage.png",
+	    desc: "IP-enabled BACnet room controller",
+	    link: "https://www.se.com/us/en/product-range/66378-connected-room-solution/?parent-subcategory-id=104130293&filter=business-2-building-automation-and-control",
+    },
+    {
+        id: "7",
+	    name: "Multiple Purpose Controller",
+	    img: "https://download.schneider-electric.com/files?p_Doc_Ref=MP-C-24A-M_EasyLogic&p_File_Type=rendition_369_jpg&default_image=DefaultProductImage.png",
+	    desc: "Building management services with HVAC analytics",
+	    link: "https://www.se.com/us/en/product-range/39297330-ecostruxure-building-advisor/#overview",
     },
 ]

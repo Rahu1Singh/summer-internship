@@ -20,8 +20,8 @@ const Products = () => {
 
 const Header = () => {
 	return (
-	  	<section id="header" className='relative left-0 top-0 w-full h-[200px] xl:h-[460px] bg-b-200 p-10 flex items-center lg:mb-10 border-b-[20px] border-b-800 rounded-bl-3xl rounded-br-3xl'>
-		  	<h1 className='absolute bottom-20 left-[10%] text-3xl lg:text-6xl font-bold text-b-900'>
+	  	<section id="header" className='relative left-0 top-0 w-full h-[200px] xl:h-[460px] bg-b-200 p-10 flex items-center lg:mb-10 border-b-[20px] border-b-800 rounded-bl-3xl rounded-br-3xl' style={{backgroundImage: "url(https://images.rawpixel.com/image_social_landscape/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcm0zNzgtMDkta255OWZoM2IuanBn.jpg)", backgroundPosition:'0% 0%'}}>
+		  	<h1 className='absolute bottom-20 left-[10%] text-3xl lg:text-6xl font-bold text-b-300'>
 				Our Products
 		  	</h1>
 	  	</section>
