@@ -11,6 +11,7 @@ import Services from './pages/Services'
 import BuildingAutomation from './pages/BuildingAutomation'
 import PowerManagement from './pages/PowerManagement'
 import SafetyandSecurity from './pages/SafetyandSecurity'
+import DCIM from './pages/DCIM'
 
 export default function App() {
     return (
@@ -26,6 +27,7 @@ export default function App() {
                 <Route path="/products/building_automation" element={<BuildingAutomation />} />
                 <Route path="/products/power_management" element={<PowerManagement />} />
                 <Route path="/products/safety_security" element={<SafetyandSecurity />} />
+                <Route path="/products/dcim" element={<DCIM />} />
             </Routes>
             <Footer />
         </Router>

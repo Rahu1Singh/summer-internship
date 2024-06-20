@@ -1,13 +1,13 @@
-import { automation , it , engineering } from "../assets"
+import { automationimg, itimg, engineeringimg } from "../assets"
 
 const Services = () => {
   	return (
     	<main className="relative bg-b-100">
       		<ServicesHeader />
       		<Intro />
-      		<ServiceCard img={automation}><AutomationContent /></ServiceCard>
-			<ServiceCard img={it}><ITContent /></ServiceCard>
-			<ServiceCard img={engineering}><EngineeringContent /></ServiceCard>
+      		<ServiceCard img={automationimg}><AutomationContent /></ServiceCard>
+			<ServiceCard img={itimg}><ITContent /></ServiceCard>
+			<ServiceCard img={engineeringimg}><EngineeringContent /></ServiceCard>
     	</main>
   	)
 }
@@ -36,7 +36,7 @@ const ServiceCard = ({children, img}) => {
     		<div className="relative xl:w-4/5 h-[536px] z-10 mx-auto xl:bg-b-200 xl:rounded-3xl p-10 flex flex-row items-center">
 				<div className="hidden xl:block relative m-10">
 					<div className="relative w-[400px] h-[400px] z-10 rounded-3xl" >
-						<img src="https://images.unsplash.com/photo-1611117775350-ac3950990985?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" className='rounded-3xl object-cover h-[400px] w-[400px]'/>
+						<img src={img} className='rounded-3xl object-cover h-[400px] w-[400px]'/>
 					</div>
 					<div className="absolute top-[20px] left-[20px] w-[400px] h-[400px] bg-b-700 rounded-3xl" />
 				</div>

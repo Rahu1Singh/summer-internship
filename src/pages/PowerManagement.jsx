@@ -1,13 +1,22 @@
 import ProductsGrid from "../components/ProductsGrid"
 import EcostruxurePMS from '../components/PowerManagement/EcoStruxurePMS'
+import { pmsproducts } from "../constants"
+import { pmsarch } from "../assets"
 
 const PowerManagement = () => {
   return (
-    <main className='bg-b-100'>
+    <main className='bg-b-100 pb-10'>
       <Header />
       <Intro />
       <EcostruxurePMS />
-      <ProductsGrid />
+      <article className='relative flex flex-col items-center p-10'>
+        <h1 className='relative text-b-900 font-semibold text-3xl max-xl:text-3xl mb-4'>ARCHITECTURE</h1>
+        <div className='relative flex justify-center'>
+          <img src={pmsarch} className='rounded-3xl z-10 border-4 border-b-800'/>
+          <div className='absolute w-full h-full top-[30px] left-[30px] bg-b-800 rounded-3xl' />
+        </div> 
+      </article>
+      <ProductsGrid productlist={pmsproducts}/>
     </main>
   )
 }

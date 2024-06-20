@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { NavLink as Link } from "react-router-dom";
 import { disablePageScroll, enablePageScroll } from "scroll-lock";
 import { MdMenu, MdClose } from "react-icons/md";
 import { motion, AnimatePresence } from "framer-motion";
@@ -29,14 +28,14 @@ const Navbar = () => {
     };
 
     return (
-        <nav className={`sticky top-0 h-[80px] flex items-center justify-between px-6 lg:justify-around ${openNavigation ? 'bg-n-8' : 'bg-b-200/30 backdrop-blur-sm'} flex-wrap bg-b-100/50 z-50`}>
-            {!openNavigation && <div>
-                <img src={logo} height={64} width={200} alt="logo" />
+        <nav className={`sticky top-0 h-[80px] flex items-center justify-between px-6 ${openNavigation ? 'bg-n-8' : 'bg-b-200/40 backdrop-blur-sm'} bg-b-100/50 z-50`}>
+            {!openNavigation && <div className="2xl:px-16">
+                <img src={logo} width={240} alt="logo" />
             </div>}
             <div className={`hidden lg:static lg:flex`}>
                 <Nav />
             </div>
-            <div className={`hidden lg:flex`}>
+            <div className={`flex 2xl:px-16`}>
                 <Button link="/contact">Contact Us</Button>
             </div>
             {!openNavigation && <button onClick={toggleNavigation} className="lg:hidden">

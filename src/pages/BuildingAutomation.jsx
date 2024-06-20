@@ -1,16 +1,24 @@
 import EcostruxureBMS from "../components/BuildingAutomation/EcostruxureBMS"
 import EcostruxureBOS from "../components/BuildingAutomation/EcostruxureBOS"
 import ProductsGrid from "../components/ProductsGrid"
+import { bmsproducts, bosproducts } from "../constants"
+import { bmsarch } from "../assets"
 
 const BuildingAutomation = () => {
   return (
-    <main className="bg-b-100">
+    <main className="bg-b-100 pb-10">
       <Header />
       <Intro />
       <EcostruxureBMS />
-      <ProductsGrid />
+      <article className='flex flex-col items-center my-16 p-10'>
+        <h1 className='relative text-b-900 font-semibold text-3xl max-xl:text-3xl mb-4'>ARCHITECTURE</h1>
+        <div className='relative flex justify-center'>
+          <img src={bmsarch} className='rounded-3xl z-10 border-4 border-b-800'/>
+          <div className='absolute w-full h-full top-[30px] left-[30px] bg-b-800 rounded-3xl' />
+        </div> 
+      </article>
       <EcostruxureBOS />
-      <ProductsGrid />
+      <ProductsGrid productlist={bmsproducts.concat(bosproducts)} />
     </main>
   )
 }

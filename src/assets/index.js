@@ -8,6 +8,7 @@ import sme500 from "./images/sme500.png"
 import bizsafe from "./images/bizsafe.png"
 import bms from "./images/ecoxpertbms.png"
 import criticalpower from "./images/criticalpower.png"
+import contactimg from "./images/contactBg.jpg"
 
 //aboutus images
 import aboutusimg from "./images/aboutus-img.jpg"
@@ -21,10 +22,6 @@ import ravellogo from "./images/ravel.png"
 import matrixlogo from "./images/matrix.png"
 import star from "./icons/star.png"
 
-//solutions and services images
-import automation from "./images/automation-img.jpg"
-import it from "./images/it-img.jpg"
-import engineering from "./images/engineering-img.jpg"
 
 //aboutus icons
 import airports from "./icons/airports.png"
@@ -39,6 +36,7 @@ import iso from "./icons/iso.png"
 import lifescience from "./icons/lifescience.png"
 import location from "./icons/location.png"
 import professional from "./icons/professional.png"
+import foodandbeverages from "./icons/foodandbeverages.png"
 
 //products images
 import ecostruxurelogo from "./images/productimages/ecostruxurelogo.png"
@@ -47,6 +45,9 @@ import bosimg from "./images/productimages/bosimg.png"
 import pmsimg from "./images/productimages/pmsimg.png"
 import cctvimg from "./images/productimages/cctvimg.png"
 import acimg from "./images/productimages/acimg.png"
+import bmsarch from "./images/productimages/bmsarch.jpg"
+import pmsarch from "./images/productimages/pmsarch.webp"
+import dcimarch from "./images/productimages/dcimarch.png"
 
 //product icons
 //bms
@@ -81,6 +82,11 @@ import flap from "./icons/producticons/speedicon.png"
 import tripod from "./icons/producticons/tripodgateicon.png"
 import barriergate from "./icons/producticons/barriergateicon.png"
 
+//services
+import automationimg from "./images/automationimg.jpg"
+import itimg from "./images/itimg.jpg"
+import engineeringimg from "./images/engineeringimg.jpg"
+
 export {
     logo, 
     heroImg1, 
@@ -91,6 +97,7 @@ export {
     bizsafe,
     bms,
     criticalpower,
+    contactimg,
 
     aboutusimg,
     allenlogo,
@@ -103,9 +110,6 @@ export {
     siemenslogo,
     star,
     
-    automation,
-    it,
-    engineering,
     airports,
     certified,
     commercialestates,
@@ -118,6 +122,7 @@ export {
     lifescience,
     location,
     professional,
+    foodandbeverages,
 
     ecostruxurelogo,
     bmsimg1,
@@ -125,6 +130,9 @@ export {
     pmsimg,
     cctvimg,
     acimg,
+    bmsarch,
+    pmsarch,
+    dcimarch,
 
     ipicon,
     enterprise,
@@ -151,4 +159,8 @@ export {
     flap,
     tripod,
     barriergate,
+
+    automationimg,
+    itimg,
+    engineeringimg,
 };

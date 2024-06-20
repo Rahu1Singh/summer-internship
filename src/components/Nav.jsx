@@ -1,7 +1,7 @@
 import { useState } from "react"
-import { NavLink as Link } from "react-router-dom"
 import { navbaritems, productitems } from "../constants"
 import { AnimatePresence, motion } from "framer-motion"
+import Button from "./Button"
 
 const Nav = () => {
     return (
@@ -26,7 +26,7 @@ const FlyoutLink = ({children, href, FlyoutContent, className}) => {
             </a>
             <AnimatePresence>
                 {showFlyout && (
-                    <motion.div initial={{ opacity: 0, y: 15 }} animate={{ opacity: 1, y: 7 }} exit={{ opacity: 0, y: 15 }} style={{ translateX: "-50%" }} transition={{ duration: 0.3, ease: "easeOut" }} className="absolute left-1/2 top-12 bg-b-200/25 backdrop-blur-sm rounded-lg text-black">
+                    <motion.div initial={{ opacity: 0, y: 15 }} animate={{ opacity: 1, y: 7 }} exit={{ opacity: 0, y: 15 }} style={{ translateX: "-50%" }} transition={{ duration: 0.3, ease: "easeOut" }} className="absolute left-1/2 top-12 bg-b-200/65 backdrop-blur-xl rounded-lg text-black">
                         <div className="absolute -top-6 left-0 right-0 h-6 bg-transparent" />
                         <FlyoutContent />
                     </motion.div>
@@ -46,9 +46,9 @@ const ProductsContent = () => {
                     </a>
                 ))}
             </div>
-            <button className="w-full bg-white text-g-700 rounded-lg border-2 border-g-700 px-4 py-2 font-semibold transition-colors hover:bg-g-700 hover:text-white hover:border-g-700">
+            <Button className="w-full bg-white text-b-700 rounded-lg border-2 border-b-700 px-4 font-semibold transition-colors hover:bg-b-700 hover:text-white">
                 View All Products
-            </button>
+            </Button>
         </div>
     )
 }

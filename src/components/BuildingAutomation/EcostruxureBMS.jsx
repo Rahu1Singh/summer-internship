@@ -3,7 +3,7 @@ import { ipicon , enterprise , edgecontrol } from "../../assets"
 
 const EcostruxureBMS = () => {
     return (
-        <div className='relative bg-g-100 my-10 p-10 overflow-hidden flex'>
+        <div className='relative bg-g-100 my-16 p-10 overflow-hidden flex'>
             <div className='relative w-full 2xl:w-1/2 flex flex-col items-center z-40 my-auto'>
                 <img src={ecostruxurelogo} className="h-[70px] lg:h-[100px]"/>
                 <div className="flex flex-col xl:w-1/2 my-3">

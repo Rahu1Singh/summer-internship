@@ -75,7 +75,7 @@ export const herotext = [
 ]
 
 //Who we are Component
-import {professional,experience,certified,iso,location,hikvision} from "../assets"
+import {professional,experience,certified,iso,location,hikvision, foodandbeverages} from "../assets"
 export const whoweareitems = [
     {
         id: "0",
@@ -120,18 +120,18 @@ import {healthcare,airports,datacenter,lifescience,hotels,commercialestates} fro
 export const domainitems = [
     {
         id: "0",
+        text: "Data Center",
+        icon: datacenter,
+    },
+    {
+        id: "1",
         text: "Healthcare",
         icon: healthcare,
     },
     {
-        id: "1",
+        id: "2",
         text: "Airports",
         icon: airports,
-    },
-    {
-        id: "2",
-        text: "Data Center",
-        icon: datacenter,
     },
     {
         id: "3",
@@ -148,6 +148,11 @@ export const domainitems = [
         text: "Commercial Estates",
         icon: commercialestates,
     },
+    {
+        id: "6",
+        text: "Food & Beverages",
+        icon: foodandbeverages,
+    }
 ]
 
 //Reviews Component
@@ -177,4 +182,118 @@ export const reviews = [
       username: "Username 5",
       stars: 4,
     },
-  ];
+];
+
+
+
+
+//products
+//building management systems
+export const bmsproducts = [
+    {
+        id: "0",
+	    name: "EcoStruxure™ Building Advisor",
+	    img: "https://download.schneider-electric.com/files?p_Doc_Ref=EcoStruxure-Building-Advisor&p_File_Type=rendition_369_jpg&default_image=DefaultProductImage.png",
+	    desc: "Building management services with HVAC analytics",
+	    link: "https://www.se.com/us/en/product-range/39297330-ecostruxure-building-advisor/#overview",
+    },
+    {
+        id: "1",
+	    name: "Automation Server - Premium",
+	    img: "https://ecostruxure-building-help.se.com/graphics/en-US/graphics380918.png",
+	    desc: "Core of the Management System",
+	    link: "https://www.se.com/in/en/download/document/03-14020-en/",
+    },
+    {
+        id: "2",
+	    name: "Room Purpose Controller",
+	    img: "https://download.schneider-electric.com/files?p_Doc_Ref=range-66378&p_File_Type=rendition_369_jpg&default_image=DefaultProductImage.png",
+	    desc: "IP-enabled BACnet room controller",
+	    link: "https://www.se.com/us/en/product-range/66378-connected-room-solution/?parent-subcategory-id=104130293&filter=business-2-building-automation-and-control",
+    },
+    {
+        id: "3",
+	    name: "Multiple Purpose Controller",
+	    img: "https://download.schneider-electric.com/files?p_Doc_Ref=MP-C-24A-M_EasyLogic&p_File_Type=rendition_369_jpg&default_image=DefaultProductImage.png",
+	    desc: "Building management services with HVAC analytics",
+	    link: "https://www.se.com/us/en/product-range/39297330-ecostruxure-building-advisor/#overview",
+    },
+];
+
+//building operation system
+export const bosproducts = [
+    {
+        id: "0",
+	    name: "Building Operation Software",
+	    img: "https://download.schneider-electric.com/files?p_Doc_Ref=EcoStruxure-Building-Operation&p_File_Type=rendition_369_jpg&default_image=DefaultProductImage.png",
+	    desc: "A single solution for your complex needs",
+	    link: "https://www.se.com/in/en/product-range/62111-ecostruxure-building-operation-software/",
+    },
+    {
+        id: "1",
+	    name: "IP-IO Modules",
+	    img: "https://ecostruxure-building-help.se.com/graphics/en-US/graphics255400.png",
+	    desc: "I/O expansion to your HVAC application ",
+	    link: "https://ecostruxure-building-help.se.com/bms/topics/show.castle?id=12493&locale=en-US&productversion=2.0",
+    },
+]
+
+//power management system
+export const pmsproducts = [
+    {
+        id: "0",
+	    name: "EcoStruxure™ Power Monitoring Expert",
+	    img: "https://download.schneider-electric.com/files?p_Doc_Ref=EcoStruxure_PME_Range&p_File_Type=rendition_369_jpg&default_image=DefaultProductImage.png",
+	    desc: "Energy supply management software for large sites",
+	    link: "https://www.se.com/in/en/product-range/65404-ecostruxure-power-monitoring-expert/#overview",
+    },
+    {
+        id: "1",
+	    name: "EcoStruxure™ Power Operation",
+	    img: "https://download.schneider-electric.com/files?p_Doc_Ref=Power_Operation_web-only&p_File_Type=rendition_369_jpg&default_image=DefaultProductImage.png",
+	    desc: "Energy supply management software for electro-intensive sites",
+	    link: "https://www.se.com/in/en/product-range/65405-ecostruxure-power-operation/#overview",
+    },
+    {
+        id: "2",
+	    name: "PowerLogic™ PowerTag",
+	    img: "https://download.schneider-electric.com/files?p_Doc_Ref=PB120401&p_File_Type=rendition_369_jpg&default_image=DefaultProductImage.png",
+	    desc: "Wireless energy sensor",
+	    link: "https://www.se.com/in/en/product-range/63626-powerlogic-powertag/",
+    },
+    {
+        id: "3",
+	    name: "PowerLogic™ PM5000 series",
+	    img: "https://download.schneider-electric.com/files?p_Doc_Ref=RDS_61281_PM5000_series&p_File_Type=rendition_369_jpg&default_image=DefaultProductImage.png",
+	    desc: "High-end cost management capabilities in an affordable power meter",
+	    link: "https://www.se.com/hk/en/product-range/61281-powerlogic-pm5000-series/",
+    },
+    {
+        id: "4",
+	    name: "PowerLogic™ ION9000",
+	    img: "https://download.schneider-electric.com/files?p_Doc_Ref=ION9000_web_only&p_File_Type=rendition_369_jpg&default_image=DefaultProductImage.png",
+	    desc: "Advanced power quality meets unparalleled innovation",
+	    link: "https://www.se.com/in/en/product-range/64241-powerlogic-ion9000/",
+    },
+    {
+        id: "5",
+	    name: "PowerLogic™ ION8650 Power Quality Meters",
+	    img: "https://download.schneider-electric.com/files?p_Doc_Ref=61053_main&p_File_Type=rendition_369_jpg&default_image=DefaultProductImage.png",
+	    desc: "Revenue and power quality power meters",
+	    link: "https://www.se.com/in/en/product-range/61053-powerlogic-ion8650-power-quality-meters/",
+    },
+    {
+        id: "6",
+	    name: "Digital AMP / VLT / FRE",
+	    img: "https://download.schneider-electric.com/files?p_Doc_Ref=RDS-994_%28web-only%29&p_File_Type=rendition_369_jpg&default_image=DefaultProductImage.png",
+	    desc: "DIN-rail mounted ammeter - voltmeter - frequencemeter",
+	    link: "https://www.se.com/in/en/product-range/994-digital-amp-vlt-fre/",
+    },
+    {
+        id: "7",
+	    name: "PM2000 series",
+	    img: "https://download.schneider-electric.com/files?p_Doc_Ref=63370_image-of-range&p_File_Type=rendition_369_jpg&default_image=DefaultProductImage.png",
+	    desc: "EasyLogic Power & Energy meter POP/RS,IO",
+	    link: "https://www.se.com/us/en/product-range/63370-pm2000-series/",
+    },
+]

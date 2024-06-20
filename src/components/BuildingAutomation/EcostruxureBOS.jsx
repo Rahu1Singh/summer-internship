@@ -3,7 +3,7 @@ import { datavisibility , efficiency , mobileaccess , security } from "../../ass
 
 const EcostruxureBMS = () => {
     return (
-        <div className='relative bg-g-100 my-10 p-10 overflow-hidden flex'>
+        <div className='relative bg-g-100 my-16 p-10 overflow-hidden flex'>
             <div className='hidden w-1/2 z-40 2xl:flex justify-center items-center'>
                 <img src={bosimg} />
             </div>
