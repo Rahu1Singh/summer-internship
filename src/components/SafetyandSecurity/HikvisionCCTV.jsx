@@ -6,7 +6,7 @@ const HikvisionCCTV = () => {
         <div className='relative my-10 p-10 overflow-hidden flex'>
             <div className='relative w-full 2xl:w-1/2 flex flex-col items-center z-40 my-auto'>
                 <img src={hikvisionlogo} className="h-[30px] lg:h-[50px] m-5"/>
-                <div className="flex flex-col lg:w-2/3 xl:w-1/2 my-3">
+                <div className="flex flex-col lg:w-2/3 my-3">
                     <h1 className='text-lg font-medium text-r-900'>HIKVISION CCTV gives you</h1>
                     <div className="flex flex-row p-2 items-center">
                         <img src={cctv1} className="h-[50px] px-3"/>

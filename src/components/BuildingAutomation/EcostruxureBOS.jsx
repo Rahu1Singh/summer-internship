@@ -1,7 +1,7 @@
 import { bosimg , ecostruxurelogo } from "../../assets"
 import { datavisibility , efficiency , mobileaccess , security } from "../../assets"
 
-const EcostruxureBMS = () => {
+const EcostruxureBOS = () => {
     return (
         <div className='relative bg-g-100 my-16 p-10 overflow-hidden flex'>
             <div className='hidden w-1/2 z-40 2xl:flex justify-center items-center'>
@@ -50,4 +50,4 @@ const EcostruxureBMS = () => {
     )
 }
 
-export default EcostruxureBMS
+export default EcostruxureBOS

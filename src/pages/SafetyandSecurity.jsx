@@ -11,7 +11,7 @@ const SafetyandSecurity = () => {
       <Intro />
       <EcostruxureFire />
       <div className="my-32" />
-      {/*<ProductsGrid productlist={fireproducts}/>*/}
+      <ProductsGrid productlist={fireproducts}/>
       <HikvisionCCTV />
       <div className="my-32" />
       {/*<ProductsGrid />*/}

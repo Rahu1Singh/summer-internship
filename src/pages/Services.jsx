@@ -2,8 +2,8 @@ import { automationimg, itimg, engineeringimg } from "../assets"
 
 const Services = () => {
   	return (
-    	<main className="relative bg-b-100">
-      		<ServicesHeader />
+    	<main className="relative bg-b-100 pb-10">
+      		<Header />
       		<Intro />
       		<ServiceCard img={automationimg}><AutomationContent /></ServiceCard>
 			<ServiceCard img={itimg}><ITContent /></ServiceCard>
@@ -12,13 +12,15 @@ const Services = () => {
   	)
 }
 
-const ServicesHeader = () => {
+const Header = () => {
 	return (
-	  <div id="header" className='relative left-0 top-0 w-full h-[200px] xl:h-[460px] bg-b-200 p-10 flex items-center border-b-[20px] border-b-800 rounded-bl-3xl rounded-br-3xl' style={{backgroundImage: "url(https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)", backgroundSize: "cover", backgroundPosition: "0% 50%"}}>
+	  	<section id="header" className='relative w-full h-[200px] xl:h-[460px] p-10 flex items-center lg:mb-10 border-b-[20px] border-b-800 rounded-bl-3xl rounded-br-3xl' style={{backgroundImage: "url(https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)", backgroundPosition:'0% 0%'}}>
 			<div className='absolute inset-0 bg-black/50' />
-			<h1 className='absolute bottom-16 left-[10%] text-5xl xl:text-[54px] font-bold text-b-300'> Solutions & <br/> Services </h1>
-	  </div>
-  )
+		  	<h1 className='absolute bottom-20 left-[10%] text-3xl lg:text-6xl font-bold text-b-300'>
+				Our Products
+		  	</h1>
+	  	</section>
+  	)
 }
 
 const Intro = () => {
@@ -43,7 +45,6 @@ const ServiceCard = ({children, img}) => {
 				</div>
 				{children}
 			</div>
-			<img  src={img} width={380} height={362} className="absolute xl:hidden top-0 w-full h-full object-cover opacity-65" />
 			<div className="hidden xl:block absolute w-4/5 h-[536px] top-[12%] left-[12%] bg-b-700 rounded-3xl" />
     	</div>
   	)

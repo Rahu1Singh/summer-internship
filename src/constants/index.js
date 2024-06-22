@@ -13,13 +13,13 @@ export const navbaritems = [
     },
     {
         id: "2",
-        title: "Products",
-        url: "/products",
+        title: "Products & Solutions",
+        url: "/products/building_automation_control",
         onlyMobile:false
     },
     {
         id: "3",
-        title: "Solutions & Services",
+        title: "Services",
         url: "/services",
         onlyMobile:false
     },
@@ -34,28 +34,41 @@ export const navbaritems = [
 export const productitems = [
     {
         id: "0",
-        title: "Building Automation",
-        url: "/products/building_automation"
+        title: "Building Automation & Control",
+        url: "/products/building_automation_control"
     },
     {
         id: "1",
-        title: "DCIM",
-        url: "/products/dcim"
+        title: "Process Automation",
+        url: "/products/process_automation"
     },
     {
         id: "2",
-        title: "Facility Management",
-        url: "/products/facility_management"
+        title: "Food & Beverages",
+        url: "/products/food_and_beverages"
+    },
+]
+
+export const bacitems = [
+    {
+        id: "0",
+        title: "Building Management",
+        url: "/products/building_automation_control/building_management"
+    },
+    {
+        id: "1",
+        title: "Power Management",
+        url: "/products/building_automation_control/power_management"
+    },
+    {
+        id: "2",
+        title: "DCIM",
+        url: "/products/building_automation_control/dcim"
     },
     {
         id: "3",
-        title: "Power Management",
-        url: "/products/power_management"
-    },
-    {
-        id: "4",
         title: "Safety & Security",
-        url: "/products/safety_security"
+        url: "/products/building_automation_control/safety_security"
     }
 ]
 
@@ -208,7 +221,7 @@ export const bmsproducts = [
     },
     {
         id: "1",
-	    name: "Automation Server - Premium",
+	    name: "Automation Server",
 	    img: "https://ecostruxure-building-help.se.com/graphics/en-US/graphics380918.png",
 	    desc: "Core of the Management System",
 	    link: "https://www.se.com/in/en/download/document/03-14020-en/",
@@ -222,7 +235,7 @@ export const bmsproducts = [
     },
     {
         id: "3",
-	    name: "Multiple Purpose Controller",
+	    name: "Multipurpose Controller",
 	    img: "https://download.schneider-electric.com/files?p_Doc_Ref=MP-C-24A-M_EasyLogic&p_File_Type=rendition_369_jpg&default_image=DefaultProductImage.png",
 	    desc: "Building management services with HVAC analytics",
 	    link: "https://www.se.com/us/en/product-range/39297330-ecostruxure-building-advisor/#overview",
@@ -251,17 +264,17 @@ export const bosproducts = [
 export const pmsproducts = [
     {
         id: "0",
-	    name: "EcoStruxure™ Power Monitoring Expert",
-	    img: "https://download.schneider-electric.com/files?p_Doc_Ref=EcoStruxure_PME_Range&p_File_Type=rendition_369_jpg&default_image=DefaultProductImage.png",
-	    desc: "Energy supply management software for large sites",
-	    link: "https://www.se.com/in/en/product-range/65404-ecostruxure-power-monitoring-expert/#overview",
+	    name: "EcoStruxure™ Power Advisor",
+	    img: "hhttps://download.schneider-electric.com/files?p_Doc_Ref=EcoStruxure-Power-Advisor&p_File_Type=rendition_369_jpg&default_image=DefaultProductImage.png",
+	    desc: "Analytics for power management and distribution system",
+	    link: "https://www.se.com/in/en/product-range/65478-ecostruxure-power-advisor/#overview",
     },
     {
         id: "1",
-	    name: "EcoStruxure™ Power Operation",
-	    img: "https://download.schneider-electric.com/files?p_Doc_Ref=Power_Operation_web-only&p_File_Type=rendition_369_jpg&default_image=DefaultProductImage.png",
-	    desc: "Energy supply management software for electro-intensive sites",
-	    link: "https://www.se.com/in/en/product-range/65405-ecostruxure-power-operation/#overview",
+        name: "EcoStruxure™ Power Monitoring Expert",
+	    img: "https://download.schneider-electric.com/files?p_Doc_Ref=EcoStruxure_PME_Range&p_File_Type=rendition_369_jpg&default_image=DefaultProductImage.png",
+	    desc: "Energy supply management software for large sites",
+	    link: "https://www.se.com/in/en/product-range/65404-ecostruxure-power-monitoring-expert/#overview",
     },
     {
         id: "2",
@@ -364,58 +377,51 @@ export const fireproducts = [
 export const dcimproducts = [
     {
         id: "0",
-	    name: "Galaxy UPS",
-	    img: "https://download.schneider-electric.com/files?p_Doc_Ref=GalaxyVL_RNG_V&p_File_Type=rendition_369_jpg",
-	    desc: "Highly efficient, simple-to-deploy, compact 3-phase UPS power protection",
-	    link: "https://www.se.com/in/en/work/products/master-ranges/galaxy/",
-    },
-    {
-        id: "1",
-	    name: "Galaxy Li-Ion Battery Systems",
-	    img: "https://download.schneider-electric.com/files?p_Doc_Ref=GalaxyLithium-ion__RNG&p_File_Type=rendition_369_jpg&default_image=DefaultProductImage.png",
-	    desc: "A compact, lightweight and long-lasting battery solution for UPS",
-	    link: "https://www.se.com/in/en/product-range/66102-galaxy-lithiumion-battery-systems/?parent-category-id=8000&parent-subcategory-id=8030&filter=business-3-critical-power-cooling-and-racks",
-    },
-    {
-        id: "2",
-	    name: "SpaceLogic Communicating Sensors",
-	    img: "https://download.schneider-electric.com/files?p_Doc_Ref=comm-sensors-range-image&p_File_Type=rendition_369_jpg&default_image=DefaultProductImage.png",
-	    desc: "Comprehensive sensing, high comfort experience",
-	    link: "https://www.se.com/in/en/product-range/8297100-spacelogic-communicating-sensors/?parent-category-id=88878&parent-subcategory-id=89226&filter=business-2-building-automation-and-control",
-    },
-    {
-        id: "3",
-	    name: "Smart-UPS",
-	    img: "https://www.se.com/in/en/assets/v2/380/media/8113/900/SmartUPS_Family_LCD_Reflc-IC-900x500.jpg",
-	    desc: "protect equipment and critical data from costly interruptions",
-	    link: "https://www.se.com/in/en/work/products/master-ranges/smart-ups/",
-    },
-    {
-        id: "4",
 	    name: "EcoStruxure™ Building Advisor",
 	    img: "https://download.schneider-electric.com/files?p_Doc_Ref=EcoStruxure-Building-Advisor&p_File_Type=rendition_369_jpg&default_image=DefaultProductImage.png",
 	    desc: "Building management services with HVAC analytics",
 	    link: "https://www.se.com/us/en/product-range/39297330-ecostruxure-building-advisor/#overview",
     },
     {
+        id: "1",
+	    name: "EcoStruxure™ Power Advisor",
+	    img: "hhttps://download.schneider-electric.com/files?p_Doc_Ref=EcoStruxure-Power-Advisor&p_File_Type=rendition_369_jpg&default_image=DefaultProductImage.png",
+	    desc: "Analytics for power management and distribution system",
+	    link: "https://www.se.com/in/en/product-range/65478-ecostruxure-power-advisor/#overview",
+    },
+    {
+        id: "2",
+        name: "EcoStruxure™ IT Advisor",
+	    img: "https://download.schneider-electric.com/files?p_Doc_Ref=ESXIT_ITA_RANGE_H&p_File_Type=rendition_369_jpg&default_image=DefaultProductImage.png",
+	    desc: "High-end cost management capabilities in an affordable power meter",
+	    link: "https://ecostruxureit.com/ecostruxure-it-advisor/",
+    },
+    {
+        id: "3",
+	    name: "PowerLogic Power Meters",
+	    img: "https://download.schneider-electric.com/files?p_Doc_Ref=ION9000_web_only&p_File_Type=rendition_369_jpg&default_image=DefaultProductImage.png",
+	    desc: "Power monitoring and advanced power ",
+	    link: "https://www.se.com/ww/en/work/products/master-ranges/powerlogic/",
+    },
+    {
+        id: "4",
+        name: "SpaceLogic Communicating Sensors",
+	    img: "https://download.schneider-electric.com/files?p_Doc_Ref=comm-sensors-range-image&p_File_Type=rendition_369_jpg&default_image=DefaultProductImage.png",
+	    desc: "Comprehensive sensing, high comfort experience",
+	    link: "https://www.se.com/in/en/product-range/8297100-spacelogic-communicating-sensors/?parent-category-id=88878&parent-subcategory-id=89226&filter=business-2-building-automation-and-control",
+    },
+    {
         id: "5",
-	    name: "Automation Server - Premium",
-	    img: "https://ecostruxure-building-help.se.com/graphics/en-US/graphics380918.png",
-	    desc: "Core of the Management System",
-	    link: "https://www.se.com/in/en/download/document/03-14020-en/",
+	    name: "Ecofit UPS",
+	    img: "https://download.schneider-electric.com/files?p_Doc_Ref=E3MUPS60-80KHB_FR_H&p_File_Type=rendition_113_png&default_image=DefaultProductImage.png",
+	    desc: "Renew your Cooling system and modernize your data center equipment.",
+	    link: "https://www.se.com/in/en/product-range/66000-refresh-ups/",
     },
     {
         id: "6",
-	    name: "Room Purpose Controller",
-	    img: "https://download.schneider-electric.com/files?p_Doc_Ref=range-66378&p_File_Type=rendition_369_jpg&default_image=DefaultProductImage.png",
-	    desc: "IP-enabled BACnet room controller",
-	    link: "https://www.se.com/us/en/product-range/66378-connected-room-solution/?parent-subcategory-id=104130293&filter=business-2-building-automation-and-control",
-    },
-    {
-        id: "7",
-	    name: "Multiple Purpose Controller",
-	    img: "https://download.schneider-electric.com/files?p_Doc_Ref=MP-C-24A-M_EasyLogic&p_File_Type=rendition_369_jpg&default_image=DefaultProductImage.png",
-	    desc: "Building management services with HVAC analytics",
-	    link: "https://www.se.com/us/en/product-range/39297330-ecostruxure-building-advisor/#overview",
+	    name: "UPS",
+	    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUnZYFz45GWIEicYjb_Zj1sG6ugIVMODY5bIyvEEyiozUzhS4q",
+	    desc: "Highly efficient, simple-to-deploy UPS power protection",
+	    link: "https://www.apc.com/shop/hr/en/products/Symmetra-PX-128kW-Scalable-to-160kW-400V-w-Integrated-Modular-Distribution/P-SY128K160H-PD",
     },
 ]

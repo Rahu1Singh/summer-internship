@@ -4,7 +4,7 @@ import ProductsGrid from "../components/ProductsGrid"
 import { bmsproducts, bosproducts } from "../constants"
 import { bmsarch } from "../assets"
 
-const BuildingAutomation = () => {
+const BuildingManagement = () => {
   return (
     <main className="bg-b-100 pb-10">
       <Header />
@@ -26,7 +26,7 @@ const BuildingAutomation = () => {
 const Header = () => {
   return (
     <section id="header" className='relative z-10 left-0 top-0 w-full h-[200px] xl:h-[460px] p-10 flex items-center lg:mb-10 border-b-[20px] border-b-800 rounded-bl-3xl rounded-br-3xl overflow-clip' style={{backgroundImage:"url(https://www.autodesk.com/blogs/construction/wp-content/uploads/2021/02/construction-technology-trends-APAC.jpg)", backgroundPosition: "100% 50%"}}>
-    <h1 className='absolute bottom-16 left-[10%] text-5xl xl:text-6xl font-bold text-b-900 z-20'> Building <br/> Automation </h1>
+    <h1 className='absolute bottom-16 left-[10%] text-5xl xl:text-6xl font-bold text-b-900 z-20'> Building <br/> Management</h1>
 </section>
 )
 }
@@ -42,4 +42,4 @@ const Intro = () => {
     )
 }
 
-export default BuildingAutomation
+export default BuildingManagement
