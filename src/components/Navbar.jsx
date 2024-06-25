@@ -2,20 +2,16 @@ import { useState, useEffect } from "react";
 import { disablePageScroll, enablePageScroll } from "scroll-lock";
 import { MdMenu, MdClose } from "react-icons/md";
 import { motion, AnimatePresence } from "framer-motion";
-import { useLocation } from "react-router-dom";
 
-import { logo } from "../assets";
+import { bizsafe, logo, sme500 } from "../assets";
 import Button from "./Button";
 import Nav from "./Nav";
 import Hamburger from "./Hamburger";
 
 const Navbar = () => {
-    const location = useLocation();
     const [openNavigation, setOpenNavigation] = useState(false);
     const [isVisible, setIsVisible] = useState(true);
     const [lastScrollY, setLastScrollY] = useState(0);
-    const [bgColor, setBgColor] = useState('bg-black');
-    const [textColor, setTextColor] = useState('text-white');
 
     const toggleNavigation = () => {
         if (openNavigation) {
@@ -36,20 +32,11 @@ const Navbar = () => {
     
     const controlNavbar = () => {
         if (typeof window !== 'undefined') {
-            if (window.scrollY > lastScrollY) { // if scroll down
+            if (window.scrollY > lastScrollY && window.scrollY > 80) { // if scroll down
                 setIsVisible(false);
             } else { // if scroll up
                 setIsVisible(true);
             }
-            if(location.pathname === '/') {
-            if (window.scrollY > 80) { // if scrolled down
-                setBgColor('bg-b-200/90');
-                setTextColor('text-black');
-            } else { // if at the top
-                setBgColor('bg-black');
-                setTextColor('text-white');
-            }
-        }
             setLastScrollY(window.scrollY);
     }}
 
@@ -64,30 +51,31 @@ const Navbar = () => {
     }, [lastScrollY]);
 
     return (
-        <nav className={`sticky top-0 h-[80px] flex items-center justify-between px-6 ${openNavigation ? 'bg-n-8' : `${location.pathname === '/' ? bgColor : 'bg-b-200/90'} backdrop-blur-sm`} z-50 transition-transform duration-300 ${isVisible ? 'translate-y-0' : '-translate-y-full'}`}>
-            {!openNavigation && <div className="2xl:px-16">
-                <img src={logo} width={240} alt="logo" />
-            </div>}
-            <div className={`hidden lg:static lg:flex`}>
-                <Nav text={location.pathname === '/' ? textColor : 'text-black'} />
+        <nav className={`sticky top-0 h-[80px] flex items-center justify-between px-6 ${openNavigation ? 'bg-n-8' : 'bg-white backdrop-blur-sm'} z-50 transition-transform duration-300 ${isVisible ? 'translate-y-0' : '-translate-y-full'}`}>
+            <div className="2xl:px-16">
+                <img src={logo} className="w-[200px] lg:w-[280px]" alt="logo" />
             </div>
-            <div className={`flex 2xl:px-16`}>
+            {/*<div className={`hidden lg:static lg:flex`}>
+                <Nav text='text-black' />
+            </div>
+            <div className={`hidden lg:flex 2xl:px-16`}>
                 <Button link="/contact">Contact Us</Button>
-            </div>
-            {!openNavigation && <button onClick={toggleNavigation} className="lg:hidden">
-                <MdMenu className="text-2xl" />
-            </button>}
+            </div>*/}
+            {!openNavigation && 
+            <div className="flex gap-x-10">
+                <div className="hidden lg:flex gap-x-5 mx-10">
+                    <img src={sme500} width={130} />
+                    <img src={bizsafe} width={100} />
+                </div>
+                <button onClick={toggleNavigation}>
+                    <MdMenu className={`text-2xl text-black`} />
+                </button>
+            </div>}
             <AnimatePresence>
                 {openNavigation && (
-                    <motion.div
-                        initial={{ opacity: 0, x: 300 }}
-                        animate={{ opacity: 1, x: 0 }}
-                        exit={{ opacity: 0, x: 300 }}
-                        transition={{ duration: 0.3, ease: "easeOut" }}
-                        className="fixed top-0 right-0 w-screen h-screen bg-b-200/50 backdrop-blur-md flex flex-col items-center z-50"
-                    >
-                        <div className="fixed top-2 left-6">
-                            <img src={logo} height={64} width={200} alt="logo" />
+                    <motion.div initial={{ opacity: 0, x: 300 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: 300 }} transition={{ duration: 0.3, ease: "easeOut" }} className="fixed top-0 right-0 w-screen md:w-1/2 xl:w-1/4 h-screen bg-white/40 backdrop-blur-3xl flex flex-col items-center z-50">
+                        <div className="lg:hidden fixed top-2 left-6">
+                            <img src={logo} width={240} alt="logo" />
                         </div>
                         <button onClick={toggleNavigation} className="fixed top-4 right-2 m-4">
                             <MdClose className="text-2xl" />

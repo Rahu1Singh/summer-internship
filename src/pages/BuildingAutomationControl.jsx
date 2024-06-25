@@ -1,12 +1,11 @@
 import DomainCard from '../components/DomainCard'
-import ProductsGrid from '../components/ProductsGrid'
 
 const BuildingAutomationControl = () => {
   	return (
     	<main className='bg-b-100'>
 			<Header />
 			<Intro />
-      		<section className='flex flex-col md:flex-row md:flex-wrap justify-around mx-20'>
+      		<section className='flex flex-row flex-wrap justify-around'>
         		<DomainCard linkto="/products/building_automation_control/building_management" imglink={"https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"}>Building Management</DomainCard>
 				<DomainCard linkto="/products/building_automation_control/power_management" imglink={"https://images.unsplash.com/photo-1549880433-c2978126edec?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"}>Power Management</DomainCard>
 				<DomainCard linkto="/products/building_automation_control/dcim" imglink={"https://img.freepik.com/free-photo/long-hallway-with-row-servers-center_188544-26047.jpg?size=626&ext=jpg&ga=GA1.1.1141335507.1718755200&semt=sph"}>Data Center Infrastructure Management</DomainCard>
@@ -28,7 +27,7 @@ const Header = () => {
 const Intro = () => {
     return (
       <article className="flex flex-col md:flex-row justify-center my-10 py-10 md:w-3/4 mx-auto">
-            <p className="md:w-2/5 mx-10 my-5 font-semibold text-b-900 text-xl xl:text-3xl md:text-right">OUR PRODUCTS<br className="hidden md:block" />AND SOLUTIONS</p>
+            <p className="md:w-2/5 mx-10 my-5 font-semibold text-b-900 text-xl xl:text-3xl md:text-right">OUR PRODUCTS <br className="hidden md:block" />AND SOLUTIONS</p>
             <div className="w-[4px] bg-black" />
             <p className="md:w-3/5 mx-10 flex items-center xl:text-[18px]">At Ingenium, we specialize in providing  cutting-edge building management systems (BMS), power management systems (PMS) and data center infrastructure management (DCIM), while also providing safety and security solutions.</p>
       </article>

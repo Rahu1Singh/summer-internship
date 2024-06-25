@@ -6,20 +6,20 @@ import Projects from "./Projects";
 const Domains = () => {
     return (
         <section id="domains" className="relative w-full bg-b-100 overflow-hidden flex flex-col items-center">
-            <div id="whoweare" className="relative my-5 p-5 flex flex-col justify-center items-center w-full z-30">
-                <h1 className="z-30 text-[50px] font-bold text-b-950 my-2 lg:my-5">Who We Are</h1>
+            <div id="whoweare" className="relative my-5 lg:p-5 flex flex-col justify-center items-center w-full z-30">
+                <h1 className="z-30 text-2xl lg:text-[50px] font-bold text-b-950 my-2 lg:my-5">Who We Are</h1>
                 <Whoweare />
             </div>
-            <div className="my-5 relative p-5 flex flex-col justify-center items-center w-full z-30">
-                <h1 className="z-30 text-[50px] text-center font-bold text-b-950 my-2 lg:my-5">Domains We Serve</h1>
+            <div id="domainsweserve" className="relative my-5 lg:p-5 flex flex-col justify-center items-center w-full z-30">
+                <h1 className="z-30 text-2xl lg:text-[50px] text-center font-bold text-b-950 my-2 lg:my-5">Domains We Serve</h1>
                 <Domainsweserve />
             </div>
-            <div className="z-30 w-full flex flex-col items-center justify-center my-5">
-                <h1 className="z-10 text-[50px] text-center font-bold text-b-950 my-2 lg:my-5">Projects</h1>
+            <div id="projects" className="relative my-5 w-full lg:p-5 flex flex-col items-center justify-center z-30">
+                <h1 className="z-30 text-2xl lg:text-[50px] text-center font-bold text-b-950 my-2 lg:my-5">Projects</h1>
                 <Projects />
             </div>
             <div className="my-5 z-20 relative">
-                <h1 className="z-10 text-[50px] text-center font-bold text-b-950 my-2 lg:my-5">Brands Expertised</h1>
+                <h1 className="z-10 text-2xl lg:text-[50px] text-center font-bold text-b-950 my-2 lg:my-5">Brands Expertised</h1>
                 <BrandsExpertised />
             </div>
 

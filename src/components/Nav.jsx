@@ -3,11 +3,11 @@ import { navbaritems, productitems } from "../constants"
 import { AnimatePresence, motion } from "framer-motion"
 import Button from "./Button"
 
-const Nav = ({text}) => {
+const Nav = () => {
     return (
         <div className={`flex flex-col lg:flex-row`}>
             {navbaritems.map((item) => (
-                <FlyoutLink key={item.id} href={item.url} className={`${text} px-8 py-6 text-lg font-medium ${item.onlyMobile ? "lg:hidden" : ""} hover:text-b-800 hover:scale-[1.2] hover:font-bold transition-all`} FlyoutContent={item.title==="Products"?ProductsContent: ""}>
+                <FlyoutLink key={item.id} href={item.url} className={`px-8 py-6 text-lg font-medium ${item.onlyMobile ? "lg:hidden" : ""} hover:text-b-800 hover:scale-[1.2] hover:font-bold transition-all`} FlyoutContent={item.title==="Products & Solutions" ? ProductsContent : ""}>
                     {item.title}
                 </FlyoutLink>
             ))}
@@ -38,7 +38,7 @@ const FlyoutLink = ({children, href, FlyoutContent, className}) => {
 
 const ProductsContent = () => {
     return (
-        <div className="w-64 p-6 ">
+        <div className="w-64 p-6 min-h-[200px] flex flex-col justify-between">
             <div className="mb-6 space-y-5">
                 {productitems.map((item) => (
                     <a key={item.id} href={item.url} className="block text-base text-left font-medium hover:underline">
@@ -46,7 +46,7 @@ const ProductsContent = () => {
                     </a>
                 ))}
             </div>
-            <Button className="w-full bg-white text-b-700 rounded-lg border-2 border-b-700 px-4 font-semibold transition-colors hover:bg-b-700 hover:text-white">
+            <Button link='/products/building_automation_control' className="w-full bg-white text-b-700 rounded-lg border-2 border-b-700 px-4 font-semibold transition-colors hover:bg-b-700 hover:text-white">
                 View All Products
             </Button>
         </div>

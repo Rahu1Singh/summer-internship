@@ -7,7 +7,7 @@ const Addresses = () => {
             <div className="relative flex flex-col lg:flex-row gap-20">
                 
                 {/* Singapore Section */}
-                <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 lg:grid-rows-2 gap-5 items-center  p-5 mt-2 h-[350px] w-full bg-whitebg border-b-[20px] border-b-800 rounded-bl-3xl rounded-br-3xl rounded-3xl">
+                <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 lg:grid-rows-2 gap-5 items-center  p-5 mt-2 min-h-[350px] w-full bg-whitebg border-b-[20px] border-b-800 rounded-bl-3xl rounded-br-3xl rounded-3xl">
                     <article className="lg:col-span-2 lg:row-span-1 m-5 p-4 -mt-10 transition-all w-full rounded-3xl flex flex-col flex-grow">
                         <h1 className="my-2 flex gap-x-3 items-center font-bold text-2xl"><SlLocationPin /> SINGAPORE</h1>
                         <h3 className="flex gap-x-3 items-center font-semibold">Ingenium Automation + Engineering Pte Ltd</h3>
@@ -30,7 +30,7 @@ const Addresses = () => {
                 </div>
 
                 {/* India and Indonesia Section */}
-                <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-10 items-start p-5 mt-2 h-[350px] w-full justify-around bg-whitebg border-b-[20px] border-b-800 rounded-bl-3xl rounded-br-3xl rounded-3xl">
+                <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-10 items-start p-5 mt-2 min-h-[350px] w-full justify-around bg-whitebg border-b-[20px] border-b-800 rounded-bl-3xl rounded-br-3xl rounded-3xl">
                     {/* India Section */}
                     <div className="">
                         <article className="lg:col-span-2 lg:row-span-1 m-4 p-4 -mt-2 transition-all w-full rounded-3xl flex flex-col flex-grow">

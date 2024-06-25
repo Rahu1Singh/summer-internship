@@ -1,5 +1,6 @@
 import { dcimarch } from "../assets"
-import { dcimproducts , dcimops } from "../constants"
+import { dcimproducts } from "../products"
+import { dcimops } from "../constants"
 import ProductsGrid from "../components/ProductsGrid"
 
 const DCIM = () => {
@@ -8,7 +9,7 @@ const DCIM = () => {
             <Header />
             <Intro />
             <Operations />
-            <article className='flex flex-col items-center my-16 p-10'>
+            <article className='max-lg:hidden flex flex-col items-center my-16 p-10'>
                 <h1 className='relative text-b-900 font-semibold text-3xl max-xl:text-3xl mb-4'>ARCHITECTURE</h1>
                 <div className='relative flex justify-center'>
                     <img src={dcimarch} className='rounded-3xl z-10 border-4 border-b-800 bg-white'/>
@@ -24,7 +25,7 @@ export default DCIM
 
 const Header = () => {
     return (
-        <section id="header" className='relative z-10 left-0 top-0 w-full h-[200px] xl:h-[460px] bg-b-200 p-10 flex items-center lg:mb-10 border-b-[20px] border-b-800 rounded-bl-3xl rounded-br-3xl' style={{backgroundImage: 'url(https://images.pexels.com/photos/325229/pexels-photo-325229.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)', backgroundSize: 'cover'}}>
+        <section id="header" className='relative z-10 left-0 top-0 w-full h-[300px] xl:h-[460px] bg-b-200 p-10 flex items-center lg:mb-10 border-b-[20px] border-b-800 rounded-bl-3xl rounded-br-3xl' style={{backgroundImage: 'url(https://images.pexels.com/photos/325229/pexels-photo-325229.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)', backgroundSize: 'cover'}}>
             <h1 className='absolute bottom-16 left-[10%] text-5xl xl:text-6xl font-bold text-b-300'> Data Center<br/>Infrastructure Management</h1>
         </section> 
     )
@@ -33,9 +34,9 @@ const Header = () => {
 const Intro = () => {
     return (
       <article className="flex flex-col md:flex-row justify-center my-10 py-10 md:w-3/4 mx-auto">
-            <div className="md:w-2/5 mx-10 my-5 font-semibold text-b-900 text-xl xl:text-3xl md:text-right">DATA CENTER<br className="hidden md:block" />MANAGEMENT<span className="text-black"> (DCIM)</span></div>
+            <div className="md:w-2/5 mx-10 my-5 font-semibold text-b-900 text-3xl xl:text-4xl md:text-right">DATA CENTER<br className="hidden md:block" />MANAGEMENT<span className="text-black"> (DCIM)</span></div>
             <div className="w-[4px] bg-black" />
-            <div className="md:w-3/5 mx-10 flex items-center xl:text-[17px]"><p>At Ingenium, we specialize in delivering cutting-edge solutions for efficient data center management infrastructure. With our comprehensive suite of services and software solutions, we ensure optimal performance, energy efficiency, and reliability throughout your data center operations.</p></div>
+            <div className="md:w-3/5 mx-10 flex items-center xl:text-[17px]"><p>At Ingenium, we specialize in delivering cutting-edge solutions for efficient data center infrastructure management. With our comprehensive suite of services and software solutions, we ensure optimal performance, energy efficiency, and reliability throughout your data center operations.</p></div>
       </article>
     )
 }
@@ -43,7 +44,7 @@ const Intro = () => {
 const Operations =() => {
     return(
         <div className="my-5 relative p-5 flex flex-col justify-center items-center w-full z-30">
-            <h1 className="z-30 text-4xl text-center font-bold text-b-950 my-2 lg:my-5">DCIM : OPERATIONS</h1>
+            <h1 className="z-30 text-3xl lg:text-4xl text-center font-bold text-b-950 my-2 lg:my-5">DCIM : OPERATIONS</h1>
         <div id="items" className="flex flex-row flex-wrap justify-center gap-4 my-10 w-4/5">
         	{dcimops.map((item) => (
             	<div key={item.id} className="relative">
