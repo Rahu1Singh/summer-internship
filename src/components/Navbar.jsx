@@ -3,7 +3,7 @@ import { disablePageScroll, enablePageScroll } from "scroll-lock";
 import { MdMenu, MdClose } from "react-icons/md";
 import { motion, AnimatePresence } from "framer-motion";
 
-import { bizsafe, logo, sme500 } from "../assets";
+import { bizsafe, iso14001, iso45001, iso9001, logo, sme500 } from "../assets";
 import Button from "./Button";
 import Nav from "./Nav";
 import Hamburger from "./Hamburger";
@@ -52,8 +52,8 @@ const Navbar = () => {
 
     return (
         <nav className={`sticky top-0 h-[80px] flex items-center justify-between px-6 ${openNavigation ? 'bg-n-8' : 'bg-white backdrop-blur-sm'} z-50 transition-transform duration-300 ${isVisible ? 'translate-y-0' : '-translate-y-full'}`}>
-            <div className="2xl:px-16">
-                <img src={logo} className="w-[200px] lg:w-[280px]" alt="logo" />
+            <div className="xl:px-6">
+                <a href="/"><img src={logo} className="w-[220px] lg:w-[280px]" alt="logo" /></a>
             </div>
             {/*<div className={`hidden lg:static lg:flex`}>
                 <Nav text='text-black' />
@@ -62,10 +62,13 @@ const Navbar = () => {
                 <Button link="/contact">Contact Us</Button>
             </div>*/}
             {!openNavigation && 
-            <div className="flex gap-x-10">
-                <div className="hidden lg:flex gap-x-5 mx-10">
+            <div className="flex h-full gap-x-10">
+                <div className="hidden lg:flex items-center gap-x-5 mx-10 py-1">
+                    <img src={iso9001} width={80} />
+                    <img src={iso45001} width={80} />
+                    <img src={iso14001} width={80} />
                     <img src={sme500} width={130} />
-                    <img src={bizsafe} width={100} />
+                    <img src={bizsafe} width={110} />
                 </div>
                 <button onClick={toggleNavigation}>
                     <MdMenu className={`text-2xl text-black`} />

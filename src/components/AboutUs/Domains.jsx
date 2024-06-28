@@ -23,8 +23,8 @@ const Domains = () => {
                 <BrandsExpertised />
             </div>
 
-            <div className="absolute -left-[950px] top-[650px] h-[900px] w-[3370px] -rotate-45 z-0 bg-b-300"></div>
-            <div className="absolute top-[1375px] left-[627px] h-[1600px] w-[1600px] -rotate-45 z-0 bg-b-400"></div>
+            <div className="absolute -left-[950px] top-[650px] h-[900px] w-[3370px] -rotate-45 z-0 bg-b-300" aria-hidden="true" />
+            <div className="absolute top-[1375px] left-[627px] h-[1600px] w-[1600px] -rotate-45 z-0 bg-b-400" aria-hidden="true" />
         </section>
     );
 };

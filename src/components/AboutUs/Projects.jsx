@@ -86,6 +86,7 @@ const Projects = () => {
             <motion.div id="accordion-collapse-body-4" initial={{ height: 0, opacity: 0 }} animate={{ height: 'auto', opacity: 1 }} exit={{ height: 0, opacity: 0 }} transition={{ duration: 0.3 }} aria-labelledby="accordion-collapse-heading-4" className="overflow-hidden">
               <div className="px-10 py-5 bg-b-200">
                 <li className='my-2 text-lg'>MRF Track Watering System, Tamil Nadu, India</li>
+                <li className='my-2 text-lg'>JLL CEO Office, PLQ2, Paya Lebar, Singapore</li>
                 <li className='my-2 text-lg'>Shell, Brunei</li>
               </div>
             </motion.div>

@@ -29,8 +29,8 @@ const ContactForm = () => {
       >
         <h1 className='text-5xl xl:text-[54px] font-bold text-white'>Contact Us</h1>
       </div>
-      <section className="relative mx-auto flex justify-center lg:w-[70%] md:-mt-32 lg:-mt-40 z-30">
-        <div className="hidden lg:flex flex-col justify-around items-start min-h-[466px] overflow-hidden z-20 p-2 w-1/3 rounded-l-3xl text-white bg-b-800 px-6">
+      <section className="relative mx-auto flex justify-center lg:w-[70%] md:-mt-32 lg:-mt-40 z-30 border-2 border-b-800 lg:rounded-3xl overflow-hidden">
+        <div className="hidden lg:flex flex-col justify-around items-start min-h-[466px] overflow-hidden z-20 p-2 w-1/3 text-white bg-b-800 px-6">
           <div className='flex flex-col'>
             <h1 className='text-3xl font-medium py-2'>Let's get in touch</h1>
             <p>Send us your queries, suggestions & comments and we'll respond as soon as we can. We would love to hear from you!</p>
@@ -40,7 +40,7 @@ const ContactForm = () => {
             <span className="flex flex-row items-center my-1"><MdMail size={16} aria-hidden="true" /><p className="inline-block mx-3">enquiry@ingeniumiae.com</p></span>
           </div>
         </div>
-        <div className="flex flex-col justify-center lg:items-start min-h-[466px] overflow-hidden w-full lg:w-2/3 md:w-1/2 z-20 p-2 lg:rounded-r-3xl bg-whitebg px-6">
+        <div className="flex flex-col justify-center lg:items-start min-h-[466px] overflow-hidden w-full lg:w-2/3 md:w-1/2 z-20 p-2 bg-whitebg px-6">
           <form className="mt-6 w-full" ref={form} onSubmit={sendEmail}>
             <div className="mb-2 md:flex w-full">
               <label className='flex-1 mr-2' htmlFor="from_name">

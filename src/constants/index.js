@@ -16,7 +16,7 @@ export const navbaritems = [
     {
         id: "2",
         title: "Products & Solutions",
-        url: "/products/building_automation_control",
+        url: "/products",
         onlyMobile:false
     },
     {
@@ -80,7 +80,7 @@ export const bacitems = [
 export const herotext = [
     {
         id: "0",
-        text: "Efficiency Amplified: Redefining Industry Standards in Automation & IT Solutions."
+        text: "Pioneering Innovation: Crafting Complete and Effective Products for Your Business Needs."
     },
     {
         id: "1",
@@ -88,7 +88,7 @@ export const herotext = [
     },
     {
         id: "2",
-        text: "Pioneering Innovation: Crafting Complete and Effective Products for Your Business Needs."
+        text: "Efficiency Amplified: Redefining Industry Standards in Automation & IT Solutions."
     }
 ]
 

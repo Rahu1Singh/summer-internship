@@ -9,6 +9,9 @@ import bizsafe from "./images/bizsafe.png"
 import bms from "./images/ecoxpertbms.png"
 import criticalpower from "./images/criticalpower.png"
 import contactimg from "./images/contactBg.jpg"
+import iso9001 from "./images/iso9001.png"
+import iso45001 from "./images/iso45001.png"
+import iso14001 from "./images/iso14001.png"
 
 //aboutus images
 import aboutusimg from "./images/aboutus-img.jpg"
@@ -20,7 +23,15 @@ import danfosslogo from "./images/danfoss.png"
 import greystonelogo from "./images/greystone.png"
 import ravellogo from "./images/ravel.png"
 import matrixlogo from "./images/matrix.png"
-import star from "./icons/star.png"
+import dlinklogo from "./images/dlink.png"
+import netgearlogo from "./images/netgear.png"
+import apclogo from "./images/apc.png"
+import valracklogo from "./images/valrack.png"
+import ciscologo from "./images/cisco.png"
+import delllogo from "./images/dell.png"
+import hplogo from "./images/hp.png"
+import juniperlogo from "./images/juniper.png"
+
 
 
 //aboutus icons
@@ -45,9 +56,18 @@ import bosimg from "./images/productimages/bosimg.png"
 import pmsimg from "./images/productimages/pmsimg.png"
 import cctvimg from "./images/productimages/cctvimg.png"
 import acimg from "./images/productimages/acimg.png"
+import feimg from "./images/productimages/feimg.png"
+import iotimg from "./images/productimages/iotimg.png"
+
+//architectures
 import bmsarch from "./images/productimages/bmsarch.jpg"
-import pmsarch from "./images/productimages/pmsarch.webp"
+import pmsarch from "./images/productimages/pmsarch.png"
 import dcimarch from "./images/productimages/dcimarch.png"
+import itarch from "./images/productimages/itarch.jpg"
+import fearch from "./images/productimages/fearch.png"
+import search from "./images/productimages/search.jpg"
+import paarch from "./images/productimages/paarch.png"
+import iotarch from "./images/productimages/iotarch.png"
 
 //product icons
 //bms
@@ -71,6 +91,8 @@ import endtoend from "./icons/producticons/endtoendicon.png"
 import integration from "./icons/producticons/integrationicon.png"
 import design from "./icons/producticons/designicon.png"
 import communication from "./icons/producticons/communicationicon.png"
+import control from "./icons/producticons/control.png"
+import value from "./icons/producticons/value.png"
 
 import cctv1 from "./icons/producticons/cctv1.png"
 import cctv2 from "./icons/producticons/cctv2.png"
@@ -89,10 +111,24 @@ import energy from "./icons/producticons/energy.png"
 import quality from "./icons/producticons/quality.png"
 import server from "./icons/producticons/server.png"
 
+//processautomation
+import speed from "./icons/producticons/speedblue.png"
+import error from "./icons/producticons/error.png"
+import cost from "./icons/producticons/cost.png"
+import information from "./icons/producticons/information.png"
+import scalable from "./icons/producticons/scalable.png"
+import realtime from "./icons/producticons/realtime.png"
+
 //services images
 import automationimg from "./images/automationimg.jpg"
 import itimg from "./images/itimg.jpg"
 import engineeringimg from "./images/engineeringimg.jpg"
+
+//location qrs
+import singapore1qr from "./images/singapore1qr.png"
+import singapore2qr from "./images/singapore2qr.png"
+import indiaqr from "./images/indiaqr.png"
+import indonesiaqr from "./images/indonesiaqr.png"
 
 export {
     logo, 
@@ -105,6 +141,9 @@ export {
     bms,
     criticalpower,
     contactimg,
+    iso9001,
+    iso45001,
+    iso14001,
 
     aboutusimg,
     allenlogo,
@@ -115,7 +154,14 @@ export {
     matrixlogo,
     ravellogo,
     siemenslogo,
-    star,
+    dlinklogo,
+    netgearlogo,
+    valracklogo,
+    apclogo,
+    ciscologo,
+    delllogo,
+    hplogo,
+    juniperlogo,
     
     airports,
     certified,
@@ -137,9 +183,17 @@ export {
     pmsimg,
     cctvimg,
     acimg,
+    feimg,
+    iotimg,
+
     bmsarch,
     pmsarch,
     dcimarch,
+    itarch,
+    fearch,
+    search,
+    paarch,
+    iotarch,
 
     ipicon,
     enterprise,
@@ -158,6 +212,8 @@ export {
     integration,
     design,
     communication,
+    control,
+    value,
     cctv1,
     cctv2,
     cctv3,
@@ -173,7 +229,19 @@ export {
     quality,
     server,
 
+    speed,
+    error,
+    cost,
+    information,
+    scalable,
+    realtime,
+
     automationimg,
     itimg,
     engineeringimg,
+
+    singapore1qr,
+    singapore2qr,
+    indiaqr,
+    indonesiaqr,
 };

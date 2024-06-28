@@ -9,8 +9,8 @@ export default {
     extend: {
       animation: {
         'infinite-scroll': 'infinite-scroll 30s linear infinite',
-        'loop-scroll-1': 'loop-scroll-1 15s linear infinite',
-        'loop-scroll-2': 'loop-scroll-2 10s linear infinite',
+        'loop-scroll-1': 'loop-scroll-1 20s linear infinite',
+        'loop-scroll-2': 'loop-scroll-2 17s linear infinite',
       },
       keyframes: {
         'infinite-scroll': {
@@ -18,8 +18,8 @@ export default {
           to: { transform: 'translateX(-100%)' },
         },
         'loop-scroll-1': {
-          from: {transform: "translateY(-30%)"},
-          to: {transform: "translateY(70%)"}
+          from: {transform: "translateY(30%)"},
+          to: {transform: "translateY(-70%)"}
         },
         'loop-scroll-2': {
           from: {transform: "translateY(-50%)"},

@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { allenlogo, siemenslogo, boschlogo, honeywelllogo, danfosslogo, greystonelogo, ravellogo, matrixlogo } from "../../assets";
+import { allenlogo, siemenslogo, boschlogo, honeywelllogo, danfosslogo, greystonelogo, ravellogo, matrixlogo, apclogo, valracklogo, dlinklogo, netgearlogo, ciscologo, delllogo, hplogo, juniperlogo } from "../../assets";
 
 const BrandsExpertised = () => {
   const logos = [
@@ -11,6 +11,14 @@ const BrandsExpertised = () => {
     { src: greystonelogo, alt: "Greystone" },
     { src: ravellogo, alt: "Ravel" },
     { src: matrixlogo, alt: "Matrix" },
+    { src: apclogo, alt: "APC"},
+    { src: valracklogo, alt: "Valrack"},
+    { src: dlinklogo, alt: "D-Link"},
+    { src: netgearlogo, alt: "Netgear"},
+    { src: ciscologo, alt: "Cisco" },
+    { src: delllogo, alt: "Dell" },
+    { src: hplogo, alt: "HP" },
+    { src: juniperlogo, alt: "Juniper" },
   ];
 
   useEffect(() => {
