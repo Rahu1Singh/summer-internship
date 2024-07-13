@@ -6,9 +6,9 @@ const ProductsGrid = ({productlist}) => {
   }
 
   return (
-    <div className='container mx-auto my-5 p-4 pt-6 flex flex-col items-center'>
+    <div className='container mx-auto my-5  pt-6 flex flex-col items-center'>
       <h1 className="relative text-b-900 font-semibold text-3xl max-xl:text-3xl mb-4">RELATED PRODUCTS</h1>
-      <div className="relative grid grid-cols-2 lg:grid-cols-4 gap-8">
+      <div className="relative grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 ">
         {productlist.map((item) => (
           <ProductCard key={item.id} name={item.name} img={item.img} desc={item.desc} link={item.link} />
         ))}

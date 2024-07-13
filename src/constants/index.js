@@ -103,8 +103,8 @@ export const whoweareitems = [
     },
     {
         id: "1",
-        title: "21 Years Of Experience",
-        text: "Over 21 years of Project Design, Engineering, Programming, Testing & commissioning experience in Process Automation, Building Automation & Software Development",
+        title: "25 Years Of Experience",
+        text: "Over 25 years of Project Design, Engineering, Programming, Testing & commissioning experience in Process Automation, Building Automation & Software Development",
         icon: experience,
     },
     {
@@ -203,7 +203,7 @@ export const dcimops = [
     },
     {
         id: "5",
-        text: "Capacity",
+        text: "Scalability",
         icon: quality,
     },
     {

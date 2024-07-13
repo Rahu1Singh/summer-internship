@@ -7,6 +7,7 @@ import { bizsafe, iso14001, iso45001, iso9001, logo, sme500 } from "../assets";
 import Button from "./Button";
 import Nav from "./Nav";
 import Hamburger from "./Hamburger";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
     const [openNavigation, setOpenNavigation] = useState(false);
@@ -29,7 +30,6 @@ const Navbar = () => {
         setOpenNavigation(false);
     };
 
-    
     const controlNavbar = () => {
         if (typeof window !== 'undefined') {
             if (window.scrollY > lastScrollY && window.scrollY > 80) { // if scroll down
@@ -38,7 +38,8 @@ const Navbar = () => {
                 setIsVisible(true);
             }
             setLastScrollY(window.scrollY);
-    }}
+        }
+    }
 
     useEffect(() => {
         if (typeof window !== 'undefined') {
@@ -53,20 +54,14 @@ const Navbar = () => {
     return (
         <nav className={`sticky top-0 h-[80px] flex items-center justify-between px-6 ${openNavigation ? 'bg-n-8' : 'bg-white backdrop-blur-sm'} z-50 transition-transform duration-300 ${isVisible ? 'translate-y-0' : '-translate-y-full'}`}>
             <div className="xl:px-6">
-                <a href="/"><img src={logo} className="w-[220px] lg:w-[280px]" alt="logo" /></a>
+                <NavLink to="/"><img src={logo} className="w-[220px] lg:w-[280px]" alt="logo" /></NavLink>
             </div>
-            {/*<div className={`hidden lg:static lg:flex`}>
-                <Nav text='text-black' />
-            </div>
-            <div className={`hidden lg:flex 2xl:px-16`}>
-                <Button link="/contact">Contact Us</Button>
-            </div>*/}
             {!openNavigation && 
             <div className="flex h-full gap-x-10">
-                <div className="hidden lg:flex items-center gap-x-5 mx-10 py-1">
-                    <img src={iso9001} width={80} />
-                    <img src={iso45001} width={80} />
-                    <img src={iso14001} width={80} />
+                <div className="hidden xl:flex items-center gap-x-5 py-1">
+                    <img src={iso9001} width={40} />
+                    <img src={iso45001} width={40} />
+                    <img src={iso14001} width={40} />
                     <img src={sme500} width={130} />
                     <img src={bizsafe} width={110} />
                 </div>

@@ -9,9 +9,9 @@ import bizsafe from "./images/bizsafe.png"
 import bms from "./images/ecoxpertbms.png"
 import criticalpower from "./images/criticalpower.png"
 import contactimg from "./images/contactBg.jpg"
-import iso9001 from "./images/iso9001.png"
-import iso45001 from "./images/iso45001.png"
-import iso14001 from "./images/iso14001.png"
+import iso9001 from "./images/12.png"
+import iso45001 from "./images/13.png"
+import iso14001 from "./images/14.png"
 
 //aboutus images
 import aboutusimg from "./images/aboutus-img.jpg"
@@ -64,7 +64,7 @@ import bmsarch from "./images/productimages/bmsarch.jpg"
 import pmsarch from "./images/productimages/pmsarch.png"
 import dcimarch from "./images/productimages/dcimarch.png"
 import itarch from "./images/productimages/itarch.jpg"
-import fearch from "./images/productimages/fearch.png"
+import fearch from "./images/productimages/fearch.jpg"
 import search from "./images/productimages/search.jpg"
 import paarch from "./images/productimages/paarch.png"
 import iotarch from "./images/productimages/iotarch.png"
@@ -118,6 +118,11 @@ import cost from "./icons/producticons/cost.png"
 import information from "./icons/producticons/information.png"
 import scalable from "./icons/producticons/scalable.png"
 import realtime from "./icons/producticons/realtime.png"
+
+//iot
+import safety from "./icons/producticons/safety.png"
+import accuracy from "./icons/producticons/accuracy.png"
+import busywork from "./icons/producticons/busywork.png"
 
 //services images
 import automationimg from "./images/automationimg.jpg"
@@ -235,6 +240,10 @@ export {
     information,
     scalable,
     realtime,
+
+    safety,
+    accuracy,
+    busywork,
 
     automationimg,
     itimg,

@@ -8,8 +8,8 @@ const Products = () => {
                 <DomainCard linkto='/products/building_automation_control' imglink={"https://t4.ftcdn.net/jpg/02/81/89/73/360_F_281897358_3rj9ZBSZHo5s0L1ug7uuIHadSxh9Cc75.jpg"}>Building Automation & Control</DomainCard>
                 <DomainCard linkto='/products/industrial_automation_control' imglink={"https://media.istockphoto.com/id/1320950393/photo/cars-on-production-line-in-factory.jpg?s=612x612&w=0&k=20&c=WgJLxtOWIGt80cbC0OFc3wQAhraIxlz_H7l-ySDxkOw="}>Industrial Automation & Control</DomainCard>
                 <DomainCard linkto='/products/information_technology' imglink={"https://www.sansonetworks.com/images/products/img-data-center-infrastructure.png"}>IT & Networks</DomainCard>
-                <DomainCard linkto='/products/internet_of_things' imglink={"https://img.freepik.com/free-photo/rpa-concept-with-blurry-hand-touching-screen_23-2149311914.jpg?t=st=1719482547~exp=1719486147~hmac=e35e84121eac70aa81ff781408675f0e8f77671a6c13f4342fee623d363adefb&w=1380"}>Internet of Things</DomainCard>
                 <DomainCard linkto='/products/field_devices' imglink={"https://esenssys.com/esssienew/wp-content/uploads/2020/05/sensors-industrial-automation-applications-es-systems.jpg"}>Field Devices</DomainCard>
+                <DomainCard linkto='/products/internet_of_things' imglink={"https://factech.co.in/blog/wp-content/uploads/2021/08/Securing-IoT-Devices.png"}>Internet of Things</DomainCard>
             </section>
         </main>
     )

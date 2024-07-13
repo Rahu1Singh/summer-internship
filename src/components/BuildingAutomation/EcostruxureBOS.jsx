@@ -10,7 +10,7 @@ const EcostruxureBOS = () => {
 
             <div className='relative w-full 2xl:w-1/2 flex flex-col items-center z-40 my-auto'>
                 <div className="flex flex-col xl:w-1/2 my-3">
-                    <h1 className='text-xl font-medium text-g-900'>EcoStruxure™ Building Operation System has unmatched power to</h1>
+                    <h1 className='text-lg font-medium text-g-900 my-3'>EcoStruxure™ Building Operation System has unmatched power to</h1>
                     <div className="flex flex-row p-2 items-center">
                         <img src={datavisibility}  className="h-[50px] mx-3" aria-hidden="true" />
                         <div>

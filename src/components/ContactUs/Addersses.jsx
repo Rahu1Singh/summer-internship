@@ -18,7 +18,7 @@ const Addresses = () => {
                         <p className="my-2 mb-4">111 North Bridge Road #21-01,<br />Peninsula Plaza,<br />Singapore (179098).</p>
                         <h3 className="flex gap-x-3 items-center font-semibold"><span className='text-b-900 font-bold'>TEL:</span>+65 6854 3761</h3>
                         <h3 className="flex gap-x-3 items-center font-semibold"><span className='text-b-900 font-bold'>MOB:</span>+65 6507 4488</h3>
-                        <img src={singapore1qr} className="w-[200px] my-5"/>
+                        <img src={singapore1qr} className="w-[140px] my-5"/>
                     </article>
 
                     <article className="w-full h-full rounded-3xl flex flex-col justify-center">
@@ -26,7 +26,7 @@ const Addresses = () => {
                         <p className="my-2 mb-4">10, Ubi Crescent #05-08,<br />Ubi Techpark Lobby B,<br />Singapore (408564).</p>
                         <h3 className="flex gap-x-3 items-center font-semibold"><span className='text-b-900 font-bold'>TEL:</span>+65 6593 4370/71</h3>
                         <h3 className="flex gap-x-3 items-center font-semibold"><span className='text-b-900 font-bold'>FAX:</span>+65 6749 9370 </h3>
-                        <img src={singapore2qr} className="w-[200px] my-5"/>
+                        <img src={singapore2qr} className="w-[140px] my-5"/>
                     </article>
                     </div>
                 </div>
@@ -46,7 +46,7 @@ const Addresses = () => {
                             <p className="my-2 mb-4">No. 4L, 560-562, Century Plaza,<br />Anna Salai, Teynampet,<br />Chennai - 600 018.</p>
                             <h3 className="flex gap-x-3 items-center font-semibold"><span className='text-b-900 font-bold'>TEL:</span>+91 044 4795 7162</h3>
                             <h3 className="flex gap-x-3 items-center font-semibold"><span className='text-b-900 font-bold'>MOB:</span>+91 93429 61474</h3>
-                            <img src={indiaqr} className="w-[200px] my-5"/>
+                            <img src={indiaqr} className="w-[140px] my-5"/>
                         </article>
                         </div>
 
@@ -61,7 +61,8 @@ const Addresses = () => {
                             <h1 className="my-2 flex gap-x-3 items-center font-bold text-lg">Engineering Office</h1>
                             <p className="my-2 mb-4">Axa Tower Lantai 36 Unit 5-6<br />Jalan Profesor Docktor Satrio Kaveling,<br />18, South Jakarta, Indonesia</p>
                             <h3 className="flex gap-x-3 items-center font-semibold"><span className='text-b-900 font-bold'>TEL:</span>+65 9109 9557</h3>
-                            <img src={indonesiaqr} className="w-[200px] my-5"/>
+                            <h3 className="flex gap-x-3 items-center font-semibold"><span className='text-b-900 font-bold'>&nbsp;</span></h3>
+                            <img src={indonesiaqr} className="w-[140px] my-5"/>
                         </article>
                         </div>
                     </div>

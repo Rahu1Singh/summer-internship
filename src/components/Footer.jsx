@@ -1,6 +1,6 @@
 import { navbaritems } from "../constants";
 import { Footerwave } from "./Footerwave";
-import { useLocation } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import Button from "./Button";
 
 const Footer = () => {
@@ -27,13 +27,13 @@ const Footer = () => {
           <div className="mt-10 xl:mt-20">
             <nav className="flex flex-wrap justify-center text-lg font-medium">
             {navbaritems.map((item) => (
-              <a
+              <NavLink
                 key={item.id}
-                href={item.url}
+                to={item.url}
                 className={`px-5 py-2 hover:text-b-900 hover:scale-[1.15] hover:font-bold transition-all ${item.onlyMobile ? "lg:hidden" : ""}`}
               >
                 {item.title}
-              </a>
+              </NavLink>
             ))}
             </nav>
             </div>

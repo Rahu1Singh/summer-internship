@@ -22,7 +22,7 @@ const AboutUsHero = () => {
                         </div>
                     </div>
 
-                <div id='AboutUsImages' className='max-2xl:hidden flex items-start justify-center w-1/2 z-20'>
+                <div id='AboutUsImages' className='max-2xl:hidden w-1/2 z-20'>
                     <AboutUsImages />
                 </div>
 

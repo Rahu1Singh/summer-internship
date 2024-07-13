@@ -35,9 +35,13 @@ const ContactForm = () => {
             <h1 className='text-3xl font-medium py-2'>Let's get in touch</h1>
             <p>Send us your queries, suggestions & comments and we'll respond as soon as we can. We would love to hear from you!</p>
           </div>
-          <div className='flex flex-col w-3/4'>
-            <span className="flex flex-row items-center my-1"><MdMail size={16} aria-hidden="true" /><p className="inline-block mx-3">sales@ingeniumiae.com</p></span>
-            <span className="flex flex-row items-center my-1"><MdMail size={16} aria-hidden="true" /><p className="inline-block mx-3">enquiry@ingeniumiae.com</p></span>
+          <div className='flex flex-col'>
+            <h6>For enquiries</h6>
+            <span className="flex flex-row items-center ml-4 mb-2"><MdMail size={16} aria-hidden="true" /><p className="inline-block mx-3">enquiry@ingeniumiae.com</p></span>
+            <h6>For sales enquiries</h6>
+            <span className="flex flex-row items-center ml-4 mb-2"><MdMail size={16} aria-hidden="true" /><p className="inline-block mx-3">sales@ingeniumiae.com</p></span>
+            <h6>For service enquiries</h6>
+            <span className="flex flex-row items-center ml-4 mb-2"><MdMail size={16} aria-hidden="true" /><p className="inline-block mx-3">service@ingeniumiae.com</p></span>
           </div>
         </div>
         <div className="flex flex-col justify-center lg:items-start min-h-[466px] overflow-hidden w-full lg:w-2/3 md:w-1/2 z-20 p-2 bg-whitebg px-6">
@@ -68,6 +72,7 @@ const ContactForm = () => {
                 <select id="contact_type" name="contact_type" className="block w-full px-4 py-2 mt-2 text-b-700 bg-white border rounded-md focus:border-b-400 focus:ring-b-300 focus:outline-none focus:ring focus:ring-opacity-40" aria-required="true" defaultValue="Client">
                   <option value="Client">Client</option>
                   <option value="Supplier">Supplier</option>
+                  <option value="Others">Others</option>
                 </select>
               </label>
             </div>
