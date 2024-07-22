@@ -509,7 +509,7 @@ export const paproducts = [
         name: "Modicon M221",
         img: "https://download.schneider-electric.com/files?p_Doc_Ref=62128_main&p_File_Type=rendition_369_jpg&default_image=DefaultProductImage.png",
         desc: "Programmable logic controller for hardwired architectures",
-        link: "https://www.se.com/in/en/product-range/1468-modicon-m340/?parent-subcategory-id=3950&filter=business-1-industrial-automation-and-control",
+        link: "https://www.se.com/in/en/product-range/62128-logic-controller-modicon-m221/",
     },
     {
         id: "4",

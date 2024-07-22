@@ -7,7 +7,7 @@ const AboutUsHero = () => {
                 <div id='AboutUs' className='flex min-h-full px-4 md:px-8 lg:px-16 xl:px-24 2xl:px-40 py-16 md:py-16 ly:py-30 xl:py-50 2xl:py-36'>
                     <div id='heroContent' className='flex-1 relative flex flex-col items-start lg:w-2/3 z-5'>
                         <h1 className='py-5 md:py-10 text-2xl md:text-5xl xl:text-6xl font-extrabold leading-tight text-left text-b-950'>
-                            Providing innovative solutions is<br className='hidden md:block'/> not an afterthought, <br />
+                            Providing innovative solutions is not an afterthought, <br />
                             <span className='text-b-700'>it&apos;s what we do.</span>
                         </h1>
 

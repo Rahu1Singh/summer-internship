@@ -7,12 +7,12 @@ const Addresses = () => {
             <h1 className="text-4xl m-5 my-8 text-b-900 font-bold">Our Locations</h1>
             <div className="relative flex flex-col lg:flex-row">
                 {/* Singapore Section */}
-                <div className="relative z-10 flex flex-col p-5 m-5 w-full border-2 bg-whitebg border-b-[20px] border-b-800 rounded-bl-3xl rounded-br-3xl rounded-3xl min-w-[700px]">
+                <div className="relative z-10 flex flex-col p-5 m-5 w-full border-2 bg-whitebg border-b-[20px] border-b-800 rounded-bl-3xl rounded-br-3xl rounded-3xl xl:min-w-[700px]">
                     <article className="p-4 transition-all w-full rounded-3xl flex flex-col flex-grow">
                         <h1 className="my-2 flex gap-x-3 items-center font-bold text-2xl"><SlLocationPin /> SINGAPORE</h1>
                         <h3 className="gap-x-3 items-center font-semibold">Ingenium Automation + Engineering Pte Ltd</h3>
                     </article>
-                    <div className="flex">
+                    <div className="flex max-lg:flex-col">
                     <article className="w-full h-full rounded-3xl flex flex-col justify-center">
                         <h1 className="my-2 flex gap-x-3 items-center font-bold text-lg">Admin Office</h1>
                         <p className="my-2 mb-4">111 North Bridge Road #21-01,<br />Peninsula Plaza,<br />Singapore (179098).</p>
@@ -32,9 +32,9 @@ const Addresses = () => {
                 </div>
 
                 {/* India and Indonesia Section */}
-                <div className="relative z-10 flex flex-col p-5 m-5 w-full border-2 bg-whitebg border-b-[20px] border-b-800 rounded-bl-3xl rounded-br-3xl rounded-3xl min-w-[700px]">
+                <div className="relative z-10 flex flex-col p-5 m-5 w-full border-2 bg-whitebg border-b-[20px] border-b-800 rounded-bl-3xl rounded-br-3xl rounded-3xl xl:min-w-[700px]">
                     {/* India Section */}
-                    <div className="flex gap-5">
+                    <div className="flex max-lg:flex-col gap-5">
                         <div className="w-full">
                         <article className="transition-all w-full rounded-3xl flex flex-col flex-grow py-4">
                             <h1 className="my-2 flex gap-x-3 items-center font-bold text-2xl"><SlLocationPin /> INDIA</h1>

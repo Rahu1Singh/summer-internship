@@ -72,7 +72,7 @@ const ITContent = () => {
 			<ul className="block text-[17px] font-medium text-black">
 				<li className="list-disc my-3">Software Development - Offers bespoke software solutions tailored to meet specific business needs, enhancing operational efficiency and functionality.</li>
 				<li className="list-disc my-3">Interface, Driver Development (OPC, SLIP+, BNP3, BACNET, LONWORKS, MODBUS, Other Protocols) - Develops and integrates custom drivers and interfaces for a wide range of protocols, ensuring seamless communication and interoperability between different systems.</li>
-				<li className="list-disc my-3">Custom Interface For Database (SQL, MYSQL, ORACLE) - Creates tailored database interfaces to enable efficient data management, retrieval and storage across various database platforms like SQL, MySQL, and Oracle.</li>
+				<li className="list-disc my-3">Custom Interface For Database (SQL, MYSQL, ORACLE) - Creates tailored database interfaces to enable efficient data management, retrieval and storage across various database platforms like SQL, MySQL and Oracle.</li>
 				<li className="list-disc my-3">Custom Report Generation (SQL, Crystal Report) - Generates custom reports using SQL and Crystal Report, providing detailed insights and analytics tailored to specific business requirements.</li>
 				<li className="list-disc my-3">Mobile Technology (iOS, Android) - Develops mobile applications for iOS and Android platforms, enabling businesses to reach and engage users through mobile devices effectively.</li>
 			</ul>
