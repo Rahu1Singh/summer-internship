@@ -31,8 +31,16 @@ import ciscologo from "./images/cisco.png"
 import delllogo from "./images/dell.png"
 import hplogo from "./images/hp.png"
 import juniperlogo from "./images/juniper.png"
-
-
+import ashcroftlogo from "./images/ashcroft.png"
+import endresslogo from "./images/endresshauser.png"
+import gastronlogo from "./images/gastron.png"
+import keysightlogo from "./images/keysight.png"
+import mettlerlogo from "./images/mettlertoledo.png"
+import msalogo from "./images/msa.png"
+import schmidtlogo from "./images/schmidt.png"
+import troxlogo from "./images/trox.png"
+import vaisalalogo from "./images/vaisala.png"
+import wikailogo from "./images/wikai.png"
 
 //aboutus icons
 import airports from "./icons/airports.png"
@@ -167,6 +175,16 @@ export {
     delllogo,
     hplogo,
     juniperlogo,
+    ashcroftlogo,
+    endresslogo,
+    gastronlogo,
+    keysightlogo,
+    mettlerlogo,
+    msalogo,
+    schmidtlogo,
+    troxlogo,
+    vaisalalogo,
+    wikailogo,
     
     airports,
     certified,
