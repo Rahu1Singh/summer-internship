@@ -1,4 +1,3 @@
-import { useEffect } from 'react';
 import { allenlogo, siemenslogo, boschlogo, honeywelllogo, danfosslogo, greystonelogo, ravellogo, matrixlogo, apclogo, valracklogo, dlinklogo, netgearlogo, ciscologo, delllogo, hplogo, juniperlogo, ashcroftlogo, endresslogo, gastronlogo, keysightlogo,mettlerlogo, msalogo, schmidtlogo, troxlogo, vaisalalogo, wikailogo } from "../../assets";
 
 const BrandsExpertised = () => {
