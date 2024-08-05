@@ -10,7 +10,7 @@ const PowerManagement = () => {
       <Intro />
       <EcostruxurePMS />
       <article className='max-md:hidden relative flex flex-col items-center p-10'>
-        <h1 className='relative text-g-600 font-semibold text-3xl max-xl:text-3xl mb-4'>SCHNEIDER - POWER MONITORING EXPERT</h1>
+        <h1 className='relative text-g-600 font-semibold text-3xl max-xl:text-3xl mb-4'>INGENIUM - POWER MONITORING EXPERT</h1>
         <div className='relative flex justify-center max-w-[1200px]'>
           <img src={pmsarch} className='rounded-3xl z-10 border-4 border-b-800'/>
           <div className='absolute w-full h-full top-[30px] left-[30px] bg-b-800 rounded-3xl' aria-hidden="true" />

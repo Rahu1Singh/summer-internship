@@ -11,7 +11,7 @@ const BuildingManagement = () => {
             <Intro />
             <EcostruxureBMS />
             <article className=' max-lg:hidden flex flex-col items-center my-16 p-10'>
-                <h1 className='relative text-g-600 font-semibold text-3xl max-xl:text-3xl mb-4'>SCHNEIDER - BUILDING OPERATION</h1>
+                <h1 className='relative text-g-600 font-semibold text-3xl max-xl:text-3xl mb-4'>INGENIUM - BUILDING OPERATION</h1>
                 <div className='relative flex justify-center'>
                     <img src={bmsarch} className='rounded-3xl z-10 border-4 border-b-800'/>
                     <div className='absolute w-full h-full top-[30px] left-[30px] bg-b-800 rounded-3xl' aria-hidden="true" />

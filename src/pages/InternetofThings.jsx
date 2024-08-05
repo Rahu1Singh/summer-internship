@@ -42,7 +42,7 @@ const InternetofThings = () => {
             <Intro />
             <p className="w-3/4 py-5 mt-15 mx-auto text-xl text-g-600 text-center">EcoStruxure is Schneider Electric's IoT-enabled, plug-and-play, open, interoperable architecture and platform, in Homes, Buildings, Data Centres, Infrastructure and Industries. Innovation at Every Level from Connected Products to Edge Control and Apps, Analytics and Services.</p>
             <article className=' max-lg:hidden flex flex-col items-center my-8 p-10'>
-                <h1 className='relative text-g-600 font-semibold text-3xl max-xl:text-3xl mb-4'>SCHNEIDER - IOT</h1>
+                <h1 className='relative text-g-600 font-semibold text-3xl max-xl:text-3xl mb-4'>INGENIUM - IOT</h1>
                 <div className='relative flex justify-center max-w-[1200px]'>
                     <img src={iotarch} className='rounded-3xl z-10 border-4 border-b-800 ' alt='PA Architecture'/>
                     <div className='absolute w-full h-full top-[30px] left-[30px] bg-b-800 rounded-3xl' aria-hidden="true"/>

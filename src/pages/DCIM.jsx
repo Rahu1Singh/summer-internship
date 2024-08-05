@@ -11,7 +11,7 @@ const DCIM = () => {
             <div className="w-3/4 py-5 mx-auto text-xl text-g-600">Schneider Electric offers solutions and services to build new data centres or upgrade, retrofit and right-size on-premise, hybrid architectures of centralised, regional and local edge.</div>
             <Operations />
             <article className='max-lg:hidden flex flex-col items-center my-16 p-10'>
-                <h1 className='relative text-g-600 font-semibold text-3xl max-xl:text-3xl mb-4'>SCHNEIDER - DATA CENTER EXPERT</h1>
+                <h1 className='relative text-g-600 font-semibold text-3xl max-xl:text-3xl mb-4'>INGENIUM - DATA CENTER EXPERT</h1>
                 <div className='relative flex justify-center'>
                     <img src={dcimarch} className='rounded-3xl z-10 border-4 border-b-800 bg-white'/>
                     <div className='absolute w-full h-full top-[30px] left-[30px] bg-b-800 rounded-3xl' aria-hidden="true" />
