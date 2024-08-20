@@ -43,7 +43,7 @@ const Intro = () => {
 
 const EMSContent = () => {
     return (
-        <section className="relative flex items-center h-[600px] mx-auto my-5 py-20 text-[20px] font-medium">     
+        <section className="max-xl:hidden relative flex items-center h-[600px] mx-auto my-5 py-20 2xl:text-[20px] font-medium">     
             <div className="z-50 w-1/2 left-1/4 p-5">
                 <h1 className="text-center text-2xl xl:text-4xl font-bold text-b-950 my-10">Energy Management System</h1>
                 <p className="mx-auto my-5">Keysight Data Logger (formerly Agilent Data Logger) Interface for Greenmark Certification</p>

@@ -193,7 +193,7 @@ export const dcimproducts = [
         name: "UPS Network Management Cards",
         img: "https://download.schneider-electric.com/files?p_Doc_Ref=ECOIT_IT_NMC3_LIC_RANGE_H&p_File_Type=rendition_369_jpg&default_image=DefaultProductImage.png",
         desc: "Network enable your APC UPS to enhance manageability",
-        link: "https://www.se.com/us/en/product-range/61936-ups-network-management-cards/?parent-category-id=88438&parent-subcategory-id=7820&filter=business-3-critical-power-cooling-and-racks",
+        link: "https://www.se.com/us/en/product-range/61936-network-management-cards?filter=business-3-critical-power-cooling-and-racks",
     },
     {
         id: "3",

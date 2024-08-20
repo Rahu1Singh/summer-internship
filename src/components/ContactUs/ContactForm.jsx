@@ -10,12 +10,13 @@ const ContactForm = () => {
     e.preventDefault();
 
     emailjs
-      .sendForm('service_n2knc9o', 'template_78rzxc9', form.current, {
-        publicKey: 'kh7EpkRiDo81HQVio',
+      .sendForm('service_pwzl0ng', 'template_xkztcbn', form.current, {
+        publicKey: 'nuQ9qpsXhhR5aI41T',
       })
       .then(
         () => {
           console.log('SUCCESS!');
+          window.location.reload();
         },
         (error) => {
           console.log('FAILED...', error.text);
