@@ -4,8 +4,6 @@ import { MdMenu, MdClose } from "react-icons/md";
 import { motion, AnimatePresence } from "framer-motion";
 
 import { bizsafe, iso14001, iso45001, iso9001, logo, sme500 } from "../assets";
-import Button from "./Button";
-import Nav from "./Nav";
 import Hamburger from "./Hamburger";
 import { NavLink } from "react-router-dom";
 
@@ -59,9 +57,9 @@ const Navbar = () => {
             {!openNavigation && 
             <div className="flex h-full gap-x-10">
                 <div className="hidden xl:flex items-center gap-x-5 py-1">
-                    <img src={iso9001} width={40} />
-                    <img src={iso45001} width={40} />
-                    <img src={iso14001} width={40} />
+                    <img src={iso9001} width={80} />
+                    <img src={iso45001} width={80} />
+                    <img src={iso14001} width={80} />
                     <img src={sme500} width={130} />
                     <img src={bizsafe} width={110} />
                 </div>

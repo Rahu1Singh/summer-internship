@@ -44,7 +44,7 @@ const Addresses = () => {
                         <article className="w-full rounded-3xl flex flex-col">
                             <h1 className="my-2 flex gap-x-3 items-center font-bold text-lg">Engineering Office</h1>
                             <p className="my-2 mb-4">No. 4L, 560-562, Century Plaza,<br />Anna Salai, Teynampet,<br />Chennai - 600 018.</p>
-                            <h3 className="flex gap-x-3 items-center font-semibold"><span className='text-b-900 font-bold'>TEL:</span>+044 4795 7162</h3>
+                            <h3 className="flex gap-x-3 items-center font-semibold"><span className='text-b-900 font-bold'>TEL:</span>+91 44 4795 7162</h3>
                             <h3 className="flex gap-x-3 items-center font-semibold"><span className='text-b-900 font-bold'>MOB:</span>+91 93429 61474</h3>
                             <h3 className="flex gap-x-3 items-center font-semibold"><span className='text-b-900 font-bold'>MOB:</span>+91 73582 39382</h3>
                             <img src={indiaqr} className="w-[150px] my-5"/>

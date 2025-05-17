@@ -24,7 +24,7 @@ const Hero = () => {
   return (
     <section
       id='hero'
-      className='relative flex bg-b-100 px-2 md:px-8 lg:px-16 xl:px-24 py-8 md:max-h-[870px]'
+      className='relative flex max-md:flex-col bg-b-100 px-2 md:px-8 lg:px-16 xl:px-24 py-8 md:max-h-[870px]'
       style={{
         backgroundImage: `url(https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)`,
         backgroundPosition: '50% 15%',
@@ -42,10 +42,10 @@ const Hero = () => {
           className='md:py-10 text-2xl md:text-5xl lg:text-5xl xl:text-6xl font-extrabold leading-tight text-left'
           variants={staggerContainer}
         >
-          <motion.span variants={fadeInUp}>Automate to Enhance</motion.span><br className="max-md:hidden" />
-          <motion.span variants={fadeInUp}>& Empower futures</motion.span><br className="max-md:hidden" />
+          <motion.span variants={fadeInUp}>Automate to Enhance </motion.span><br className="max-md:hidden" />
+          <motion.span variants={fadeInUp}>& Empower futures </motion.span><br className="max-md:hidden" />
           <motion.span variants={fadeInUp}>with</motion.span> <span className='text-b-400'>
-            <motion.span variants={fadeInUp}>Innovative</motion.span><br className="max-md:hidden" />
+            <motion.span variants={fadeInUp}>Innovative </motion.span><br className="max-md:hidden" />
             <motion.span variants={fadeInUp}>solutions.</motion.span>
           </span>
         </motion.h1>
@@ -71,7 +71,7 @@ const Hero = () => {
           </div>
         </motion.div>
       </motion.div>
-      <div className='hidden relative lg:flex flex-col items-start xl:my-10 lg:w-1/2 max-h-[80%] z-5 text-white'>
+      <div className='flex flex-col items-start xl:my-10 lg:w-1/2 max-h-[80%] z-5 text-white'>
         <HeroImages />
       </div>
     </section>

@@ -3,7 +3,7 @@ import { navbaritems } from "../constants";
 
 const Hamburger = ({ handleClick }) => {
     return (
-        <div className="absolute p-5 z-50 flex flex-col items-center justify-center h-screen w-full space-y-10 mb-10">
+        <div className="absolute p-5 z-50 flex flex-col items-center justify-center h-screen w-full space-y-10 ">
             {navbaritems.map((item) => (
                 <div key={item.id} className="w-full flex flex-col items-center">
                     <NavLink 

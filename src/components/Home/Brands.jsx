@@ -1,4 +1,4 @@
-import { schneiderlogo, hikvisionlogo, sme500, bizsafe, bms, criticalpower } from "../../assets";
+import { schneiderlogo, sme500, bizsafe, bms, criticalpower, iso12, iso13, iso14 } from "../../assets";
 
 const Brands = () => {
   return (
@@ -19,11 +19,16 @@ const Brands = () => {
       <div className="relative w-full max-w-5xl my-10">
         <div className="relative top-0 left-0 hover:-top-[10px] hover:-left-[10px] z-20 bg-b-200 rounded-3xl p-0.5 transition-all">
           <div id='certifications' className='text-center justify-center text-xl md:text-3xl font-bold py-5'>Certified By</div>
-            <div id='brands' className="flex z-20 flex-wrap justify-center items-center py-2">
-              <img src={sme500} className="m-5 h-24 md:h-28 lg:h-28 p-2" alt="SME 500" />
-              <img src={bizsafe} className="m-5 h-20 md:h-24 lg:h-24 p-2" alt="BizSafe" />
-              <img src={bms} className="m-5 h-20 md:h-24 lg:h-28 p-2" alt="BMS" />
-              <img src={criticalpower} className="m-5 h-20 md:h-24 lg:h-28 p-2" alt="Critical Power" />
+          <div id='brands' className="flex z-20 flex-wrap justify-center items-center py-2">
+            <img src={sme500} className="m-5 h-24 md:h-28 lg:h-28 p-2" alt="SME 500" />
+            <img src={bizsafe} className="m-5 h-20 md:h-24 lg:h-24 p-2" alt="BizSafe" />
+            <img src={bms} className="m-5 h-20 md:h-24 lg:h-28 p-2" alt="BMS" />
+            <img src={criticalpower} className="m-5 h-20 md:h-24 lg:h-28 p-2" alt="Critical Power" />
+          </div>
+          <div id='brands' className="flex z-20 flex-wrap justify-center items-center py-2">
+            <img src={iso12} className="m-5 h-40 p-2" alt="iso9001" />
+            <img src={iso13} className="m-5 h-40 p-2" alt="iso14001" />
+            <img src={iso14} className="m-5 h-40 p-2" alt="iso45001" />
           </div>
         </div>  
         <div className="hidden lg:block absolute top-[20px] left-[20px] w-full h-full bg-b-700 rounded-3xl" aria-hidden="true" /> 

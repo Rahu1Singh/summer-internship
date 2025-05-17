@@ -46,11 +46,15 @@ const Projects = () => {
           {openAccordion === 2 && (
             <motion.div id="accordion-collapse-body-2" initial={{ height: 0, opacity: 0 }} animate={{ height: 'auto', opacity: 1 }} exit={{ height: 0, opacity: 0 }} transition={{ duration: 0.3 }} aria-labelledby="accordion-collapse-heading-2" className="overflow-hidden">
               <div className="px-10 py-5 bg-b-200">
+                <li className='my-2 text-lg'>GlaxoSmithKline Biologicals, Singapore</li>
+                <li className='my-2 text-lg'>Baxter Healthcare, Singapore</li>
                 <li className='my-2 text-lg'>Roche Genentech, Singapore</li>
                 <li className='my-2 text-lg'>Amgen MOF, Singapore</li>
                 <li className='my-2 text-lg'>Tan Tock Seng Hospital, SOC Clinic, Singapore</li>
                 <li className='my-2 text-lg'>GSK Biological Plant, Singapore</li>
                 <li className='my-2 text-lg'>Novartis Tablet Plant, Singapore</li>
+                <li className='my-2 text-lg'>GlaxoSmithKline Biologicals, Singapore</li>
+                <li className='my-2 text-lg'>Baxter Healthcare, Singapore</li>
               </div>
             </motion.div>
           )}

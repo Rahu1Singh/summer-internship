@@ -9,9 +9,12 @@ import bizsafe from "./images/bizsafe.png"
 import bms from "./images/ecoxpertbms.png"
 import criticalpower from "./images/criticalpower.png"
 import contactimg from "./images/contactBg.jpg"
-import iso9001 from "./images/12.png"
-import iso45001 from "./images/13.png"
-import iso14001 from "./images/14.png"
+import iso9001 from "./images/iso9001.png"
+import iso45001 from "./images/iso45001.png"
+import iso14001 from "./images/iso14001.png"
+import iso12 from "./images/12.png"
+import iso13 from "./images/13.png"
+import iso14 from "./images/14.png"
 
 //aboutus images
 import aboutusimg from "./images/aboutus-img.jpg"
@@ -157,6 +160,9 @@ export {
     iso9001,
     iso45001,
     iso14001,
+    iso12,
+    iso13,
+    iso14,
 
     aboutusimg,
     allenlogo,
